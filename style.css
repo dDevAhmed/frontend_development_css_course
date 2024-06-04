@@ -1,0 +1,41 @@
+*{
+   border: 1px dashed darksalmon;
+   margin: 10px;
+}
+
+body {
+    background: grey;
+    /* color: white; */
+}
+
+h1{
+    background: black;
+    color: aqua;
+}
+
+h3{
+    color: aqua;
+}
+
+ol{
+    background: rgb(227, 91, 70, 0.5);
+}
+
+ul{
+    color: yellow;
+    list-style-type: lower-greek;
+}
+
+mark{
+    padding: 0 10px;
+}
+
+/* We are reds 😎 */
+.we-are-reds{
+    color: red;
+}
+
+
+
+
+

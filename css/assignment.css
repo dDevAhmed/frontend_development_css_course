@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* Assignment 1 */
+.the-four-divs-container {
+    display: flex;
+    margin: auto;
+}
+
+.rgb-bg,
+.rgba-bg,
+.hex-6-bg,
+.hex-3-bg {
+    border: 1px solid black;
+    width: 25%;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+.rgb-bg {
+    background-color: rgb(110, 200, 50);
+}
+
+.rgba-bg {
+    background-color: rgba(110, 200, 50, 0.5);
+}
+
+.hex-6-bg {
+    background-color: #ee8822;
+}
+
+.hex-3-bg {
+    background-color: #e82;
+}
+
+.background-color-code{
+    background: #fafafa;
+    padding: 10px;
+    margin: auto;
+}
+/* Assignment 1 */
