@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: none;
+}
+
 /* class activity 2 */
 main.class-activity-2 {
     width: 50%;
@@ -66,6 +70,7 @@ main.class-activity-2 {
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 .class-activity-2 form h3.form-header {
     font-size: 24px;
     text-align: center;
@@ -108,7 +113,7 @@ main.class-activity-2 {
     border: 1px solid transparent;
 }
 
-.class-activity-2 form button:hover{
+.class-activity-2 form button:hover {
     color: white;
     background: transparent;
     border: 1px solid white;
@@ -136,3 +141,65 @@ main.class-activity-2 {
     background: white;
 }
 /* class activity 2 */
+
+/* class activity 3 */
+main.class-activity-3 {
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    font-family: "Times New Roman", Times, serif;
+    background: #f8f9cf;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    padding: 30px 90px;
+}
+
+main.class-activity-3 h3.header {
+    font-size: 24px;
+}
+
+main.class-activity-3 .registration-form,
+main.class-activity-3 .login-form {
+    border: 3px solid #107914;
+    margin: 5px auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.class-activity-3 .registration-form form,
+.class-activity-3 .login-form form {
+    width: 60%;
+    margin: auto;
+}
+
+.class-activity-3 form label,
+.class-activity-3 form input {
+    display: block;
+    width: 100%;
+}
+
+.class-activity-3 form button{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.class-activity-3 form label {
+    margin-bottom: 5px;
+}
+
+.class-activity-3 form input {
+    margin-bottom: 15px;
+}
+
+.class-activity-2 form input {
+    /* padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white; */
+}
+/* class activity 3 */
