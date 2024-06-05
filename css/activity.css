@@ -41,7 +41,7 @@ main.class-activity-2 {
 }
 
 .class-activity-2 .blue-circle {
-    background: rgb(31, 135, 220, 0.5);
+    background: rgb(31, 135, 220);
     left: 30px;
     /* top: -120px; */
     transform: rotate(180deg);
@@ -63,6 +63,8 @@ main.class-activity-2 {
     margin: 40px auto;
     position: relative;
     z-index: 10;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .class-activity-2 form h3.form-header {
     font-size: 24px;
