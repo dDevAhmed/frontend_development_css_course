@@ -6,14 +6,16 @@ body {
 }
 
 main {
-    width: 80%;
     margin: auto;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Assignment 1 */
 .the-four-divs-container {
     display: flex;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .rgb-bg,
@@ -21,11 +23,10 @@ main {
 .hex-6-bg,
 .hex-3-bg {
     border: 1px solid black;
-    width: 25%;
-    height: 150px;
+    width:300px;
+    height: 200px;
     margin: 10px;
     text-align: center;
-    /* padding: 20px; */
 }
 
 .rgb-bg {
