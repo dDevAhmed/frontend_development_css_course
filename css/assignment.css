@@ -5,14 +5,16 @@
 body {
 }
 
-main {
+/* Assignment 1 */
+main.assignment-1 {
     margin: auto;
     padding: 20px;
     text-align: center;
+    position: relative;
+    top: 70px;
 }
 
-/* Assignment 1 */
-.the-four-divs-container {
+main.assignment-1 .the-four-divs-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,7 +25,7 @@ main {
 .hex-6-bg,
 .hex-3-bg {
     border: 1px solid black;
-    width:300px;
+    width: 300px;
     height: 200px;
     margin: 10px;
     text-align: center;
@@ -45,9 +47,68 @@ main {
     background-color: #e82;
 }
 
-.background-color-code{
+.background-color-code {
     background: #fafafa;
     padding: 10px;
     margin: auto;
 }
 /* Assignment 1 */
+
+/* Assignment 2 */
+main.assignment-2 {
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+main.assignment-2 .assigntment-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main.assignment-2 .dog-image {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+main.assignment-2 .section-title {
+    background: #ffffdd;
+    color: #7b0501;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+main.assignment-2 p.interest span {
+    color: red;
+}
+
+main.assignment-2 p.interest span:first-child {
+    font-weight: 800;
+}
+
+main.assignment-2 form div {
+    margin-bottom: 3px;
+}
+
+main.assignment-2 table,
+main.assignment-2 th,
+main.assignment-2 tr,
+main.assignment-2 td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+main.assignment-2 .table-section{
+    text-align: center;
+    font-weight: 700;
+}
+
+main.assignment-2 .first-column{
+    color: #7b0501;
+}
+/* Assignment 2 */

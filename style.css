@@ -1,41 +1,84 @@
-*{
-   border: 1px dashed darksalmon;
-   margin: 10px;
+* {
+    /* border: 1px dashed darksalmon;
+   margin: 10px; */
 }
 
 body {
-    background: grey;
-    /* color: white; */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-h1{
-    background: black;
-    color: aqua;
+/* background-color: #f4f4f4;
+border-right: 1px solid #ccc;
+border-right: 1px solid #333; */
+
+header nav {
+    background: orange;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: #333;
+    /* clear: both; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
 }
 
-h3{
-    color: aqua;
+nav span {
+    display: flex;
+    align-items: center;
 }
 
-ol{
-    background: rgb(227, 91, 70, 0.5);
+nav span img{
+    height: 50px;
+    width: auto;
 }
 
-ul{
-    color: yellow;
-    list-style-type: lower-greek;
+nav span h3{
+    color: #333;
 }
 
-mark{
-    padding: 0 10px;
+nav ul {
+    display: flex;
+    gap: 20px;
+    /* margin-left: 30px; */
 }
 
-/* We are reds 😎 */
-.we-are-reds{
-    color: red;
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+nav ul li a:hover{
+    color: #fff;
+}
+
+div.page-container {
+    display: flex;
+    gap: 10px;
+}
+
+aside {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #333;
+    min-width: 200px;
+    z-index: -1;
 }
 
 
-
-
-
+main.index {
+    background: whitesmoke;
+    padding: 100px 40px 20px 40px;
+    margin-left: 200px;
+    /* height: 100vh; */
+}

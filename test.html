@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+        }
+
+        header .top-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 1.5rem;
+        }
+
+        header .top-nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        header .top-nav ul li a:hover {
+            background-color: #555;
+        }
+
+        aside.side-nav {
+            position: fixed;
+            top: 0;
+            /* Adjust based on header height */
+            bottom: 0;
+            width: 200px;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ccc;
+            padding: 1rem;
+            z-index: -1;
+        }
+
+        aside.side-nav nav ul {
+            list-style: none;
+        }
+
+        aside.side-nav nav ul li a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.5rem 0;
+        }
+
+        aside.side-nav nav ul li a:hover {
+            background-color: #ddd;
+        }
+
+        main {
+            margin-left: 200px;
+            /* Same as aside width */
+            padding: 2rem;
+            padding-top: 4.5rem;
+            /* Adjust based on header height */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="side-nav">
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h3>welcome to CSS</h3>
+        <p>The purpose of this class is to learn how to use CSS to style HTML documents, enhancing the visual appeal and
+            usability of websites.</p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+        <p id="first-para" style="column-count: 5; color: red">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+            nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+            quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+            accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+            id ducimus ut facilis assumenda corrupti sit necessitatibus
+            explicabo similique dolorum earum, at inventore neque.
+        </p>
+    </main>
+</body>
+
+</html>

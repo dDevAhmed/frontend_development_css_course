@@ -2,9 +2,49 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow-x: none;
 }
+
+/* class activity 1 */
+main.class-activity-1 {
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    font-family: sans-serif;
+    position: relative;
+    top: 90px;
+}
+
+.class-activity-1 h1 {
+    background: black;
+    color: aqua;
+}
+
+.class-activity-1 h3 {
+    color: aqua;
+}
+
+.class-activity-1 ol {
+    background: rgb(227, 91, 70, 0.5);
+}
+
+.class-activity-1 ul {
+    color: yellow;
+    list-style-type: lower-greek;
+    background: orangered;
+    padding: 20px;
+}
+
+.class-activity-1 mark {
+    padding: 0 10px;
+}
+
+/* We are reds 😎 */
+.class-activity-1 .we-are-reds {
+    color: red;
+}
+/* class activity 1 */
 
 /* class activity 2 */
 main.class-activity-2 {
@@ -14,7 +54,7 @@ main.class-activity-2 {
     font-family: sans-serif;
     background: #08070d;
     position: relative;
-    top: 30px;
+    top: 70px;
 }
 
 .class-activity-2 .top-line {
@@ -150,7 +190,7 @@ main.class-activity-3 {
     font-family: "Times New Roman", Times, serif;
     background: #f8f9cf;
     position: relative;
-    top: 30px;
+    top: 50px;
     text-align: center;
     padding: 30px 90px;
 }
@@ -179,7 +219,7 @@ main.class-activity-3 .login-form {
     width: 100%;
 }
 
-.class-activity-3 form button{
+.class-activity-3 form button {
     display: block;
     margin: auto;
     cursor: pointer;
