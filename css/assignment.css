@@ -66,8 +66,8 @@ main.assignment-2 {
     font-family: "Times New Roman", Times, serif;
 }
 
-main.assignment-2 .assigntment-title {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+main.assignment-2 .assignment-title {
+    font-family: cursive, sans-serif;
 }
 
 main.assignment-2 .dog-image {
@@ -103,12 +103,12 @@ main.assignment-2 td {
     border-collapse: collapse;
 }
 
-main.assignment-2 .table-section{
+main.assignment-2 .table-section {
     text-align: center;
     font-weight: 700;
 }
 
-main.assignment-2 .first-column{
+main.assignment-2 .first-column {
     color: #7b0501;
 }
 /* Assignment 2 */
