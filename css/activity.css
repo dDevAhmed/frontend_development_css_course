@@ -268,12 +268,17 @@ main.class-activity-4 {
     margin: auto;
 }
 
-.class-activity-4 .forms-container form {
+.class-activity-4 .forms-container div.form-container {
+    width: 50%;
+}
+
+.class-activity-4 .forms-container div.form-container form {
     background: white;
     padding: 20px;
     border-radius: 5px;
-    width: 50%;
-}.class-activity-4 .forms-container form h3.form-header {
+}
+
+.class-activity-4 .forms-container div.form-container form h3.form-header {
     font-size: 24px;
     text-align: center;
 }
@@ -285,7 +290,7 @@ main.class-activity-4 {
     width: 100%;
 }
 
-.class-activity-4 form label{
+.class-activity-4 form label {
     margin-bottom: 3px;
 }
 
@@ -312,26 +317,26 @@ main.class-activity-4 {
     color: #fff;
 }
 
-.class-activity-4 form .center{
+.class-activity-4 form .center {
     text-align: center;
 }
 
-.class-activity-4 form .form-policy{
+.class-activity-4 form .form-policy {
     font-size: 14px;
     color: grey;
     line-height: 20px;
 }
 
-.class-activity-4 form .outside-form-footer{
-    /* position: relative; */
-    /* bottom: -0px; */
+.class-activity-4 .forms-container div.form-container p.outside-form-footer{
+    text-align: center;
+    color: white;
 }
 
-.class-activity-4 form .outside-form-footer a{
+.class-activity-4 .forms-container div.form-container p.outside-form-footer a {
     color: #47c2a3;
 }
 
-.class-activity-4 form .outside-form-footer a:hover{
-    color: #344a73;
+.class-activity-4 .forms-container div.form-container p.outside-form-footer a:hover {
+    color: white;
 }
 /* class activity 4 */
