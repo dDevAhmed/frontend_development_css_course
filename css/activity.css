@@ -232,14 +232,107 @@ main.class-activity-3 .login-form {
 .class-activity-3 form input {
     margin-bottom: 15px;
 }
-
-.class-activity-2 form input {
-    /* padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    outline: none;
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    color: white; */
-}
 /* class activity 3 */
+
+/* class activity 4 */
+main.class-activity-4 {
+    margin: auto;
+    position: relative;
+    top: 100px;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #344a73;
+    font-family: sans-serif;
+    border-top: 5px solid #d6874e;
+    border-bottom: 5px solid white;
+}
+
+.class-activity-4 img.form-close-x {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    height: 50px !important;
+    height: auto;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.class-activity-4 .forms-container {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.class-activity-4 .forms-container form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+}.class-activity-4 .forms-container form h3.form-header {
+    font-size: 24px;
+    text-align: center;
+}
+
+.class-activity-4 form label,
+.class-activity-4 form input,
+.class-activity-4 form button {
+    display: block;
+    width: 100%;
+}
+
+.class-activity-4 form label{
+    margin-bottom: 3px;
+}
+
+.class-activity-4 form input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.class-activity-4 form button {
+    background: #47c2a3;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+
+.class-activity-4 form button:hover {
+    background: #344a73;
+    color: #fff;
+}
+
+.class-activity-4 form .center{
+    text-align: center;
+}
+
+.class-activity-4 form .form-policy{
+    font-size: 14px;
+    color: grey;
+    line-height: 20px;
+}
+
+.class-activity-4 form .outside-form-footer{
+    /* position: relative; */
+    /* bottom: -0px; */
+}
+
+.class-activity-4 form .outside-form-footer a{
+    color: #47c2a3;
+}
+
+.class-activity-4 form .outside-form-footer a:hover{
+    color: #344a73;
+}
+/* class activity 4 */
