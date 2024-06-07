@@ -20,10 +20,10 @@ main.assignment-1 .the-four-divs-container {
     justify-content: center;
 }
 
-.rgb-bg,
-.rgba-bg,
-.hex-6-bg,
-.hex-3-bg {
+.assignment-1 .rgb-bg,
+.assignment-1 .rgba-bg,
+.assignment-1 .hex-6-bg,
+.assignment-1 .hex-3-bg {
     border: 1px solid black;
     width: 300px;
     height: 200px;
@@ -31,23 +31,23 @@ main.assignment-1 .the-four-divs-container {
     text-align: center;
 }
 
-.rgb-bg {
+.assignment-1 .rgb-bg {
     background-color: rgb(110, 200, 50);
 }
 
-.rgba-bg {
+.assignment-1 .rgba-bg {
     background-color: rgba(110, 200, 50, 0.5);
 }
 
-.hex-6-bg {
+.assignment-1 .hex-6-bg {
     background-color: #ee8822;
 }
 
-.hex-3-bg {
+.assignment-1 .hex-3-bg {
     background-color: #e82;
 }
 
-.background-color-code {
+.assignment-1 .background-color-code {
     background: #fafafa;
     padding: 10px;
     margin: auto;
@@ -66,49 +66,49 @@ main.assignment-2 {
     font-family: "Times New Roman", Times, serif;
 }
 
-main.assignment-2 .assignment-title {
+.assignment-2 .assignment-title {
     font-family: cursive, sans-serif;
 }
 
-main.assignment-2 .dog-image {
+.assignment-2 .dog-image {
     position: absolute;
     right: 0;
     top: 20px;
 }
 
-main.assignment-2 .section-title {
+.assignment-2 .section-title {
     background: #ffffdd;
     color: #7b0501;
     font-weight: 800;
     font-size: 22px;
 }
 
-main.assignment-2 p.interest span {
+.assignment-2 p.interest span {
     color: red;
 }
 
-main.assignment-2 p.interest span:first-child {
+.assignment-2 p.interest span:first-child {
     font-weight: 800;
 }
 
-main.assignment-2 form div {
+.assignment-2 form div {
     margin-bottom: 3px;
 }
 
-main.assignment-2 table,
-main.assignment-2 th,
-main.assignment-2 tr,
-main.assignment-2 td {
+.assignment-2 table,
+.assignment-2 th,
+.assignment-2 tr,
+.assignment-2 td {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-main.assignment-2 .table-section {
+.assignment-2 .table-section {
     text-align: center;
     font-weight: 700;
 }
 
-main.assignment-2 .first-column {
+.assignment-2 .first-column {
     color: #7b0501;
 }
 /* Assignment 2 */

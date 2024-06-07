@@ -55,14 +55,9 @@ main.class-activity-2 {
     background: #08070d;
     position: relative;
     top: 120px;
-}
-
-.class-activity-2 .top-line {
-    background: #f4842e;
-    width: 100%;
-    height: 3px;
-    position: relative;
-    top: 0;
+    border-top: 3px solid #f4842e;
+    border-bottom: 10px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .class-activity-2 img.form-close-x {
@@ -71,7 +66,6 @@ main.class-activity-2 {
     left: 80px;
     height: 40px !important;
     height: auto;
-    /* cursor: pointer; */
     z-index: 1;
 }
 
@@ -327,7 +321,7 @@ main.class-activity-4 {
     line-height: 20px;
 }
 
-.class-activity-4 .forms-container div.form-container p.outside-form-footer{
+.class-activity-4 .forms-container div.form-container p.outside-form-footer {
     text-align: center;
     color: white;
 }
@@ -336,7 +330,113 @@ main.class-activity-4 {
     color: #47c2a3;
 }
 
-.class-activity-4 .forms-container div.form-container p.outside-form-footer a:hover {
+.class-activity-4
+    .forms-container
+    div.form-container
+    p.outside-form-footer
+    a:hover {
     color: white;
 }
 /* class activity 4 */
+
+/* class activity 5 */
+/* #4F636E - meta logo */
+/* #0068FC - facebook logo */
+/* #EFF6FE - background right color */
+/* #FCF9F4 background left color */
+main.class-activity-5 {
+    background: linear-gradient(270deg, #eff6fe, #fcf9f4);
+    margin: 100px auto 30px;
+    position: relative;
+    width: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    border-top: 5px solid #0068fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.class-activity-5 .page-header p {
+    color: #4f636e;
+}
+
+.class-activity-5 form input,
+.class-activity-5 form button,
+.class-activity-5 form a {
+    /* display: block; */
+    width: 100%;
+}
+
+.class-activity-5 form input {
+    padding: 20px;
+    border: 1px solid #cbd0d4;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.class-activity-5 form input::placeholder {
+    color: #adb2b5;
+}
+
+.class-activity-5 form button {
+    background: #0068fc;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.class-activity-5 form a.forgotten-password {
+    color: #4f636e;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    margin: 50px auto;
+}
+
+.class-activity-5 form a.forgotten-password:hover{
+    color: #0068fc;
+}
+
+.class-activity-5 button.create-new-account{
+    background: transparent;
+    border: 1px solid #7f8c94;
+    color: #4f636e;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+
+.class-activity-5 div.page-footer div.create-new-account a {
+    text-decoration: none;
+    color: #4f636e;
+}
+
+.class-activity-5 div.page-footer span.meta-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.class-activity-5 div.page-footer span.meta-logo img {
+    height: 20px;
+    width: auto;
+}
+
+.class-activity-5 div.page-footer span.meta-logo span{
+    color: #4F636E;
+}
+/* class activity 5 */
