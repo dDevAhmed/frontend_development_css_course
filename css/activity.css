@@ -106,7 +106,7 @@ main.class-activity-2 {
     width: 50%;
     margin: 40px auto;
     position: relative;
-    z-index: 10;
+    z-index: 2;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -189,8 +189,8 @@ main.class-activity-3 {
     border: 2px solid black;
     font-family: "Times New Roman", Times, serif;
     background: #f8f9cf;
+    margin: 100px auto 30px;
     position: relative;
-    top: 50px;
     text-align: center;
     padding: 30px 90px;
 }
@@ -236,9 +236,8 @@ main.class-activity-3 .login-form {
 
 /* class activity 4 */
 main.class-activity-4 {
-    margin: auto;
+    margin: 100px auto 30px;
     position: relative;
-    top: 100px;
     width: 70%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     background: #344a73;
