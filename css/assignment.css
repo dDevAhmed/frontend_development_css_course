@@ -58,8 +58,8 @@ main.assignment-1 .the-four-divs-container {
 main.assignment-2 {
     margin: auto;
     padding: 20px;
+    margin: 100px auto 30px;
     position: relative;
-    top: 100px;
     width: 70%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     background: white;
@@ -114,5 +114,121 @@ main.assignment-2 {
 /* Assignment 2 */
 
 /* Assignment 3 */
+/* #FE5A61 - primary color */
+main.assignment-3 {
+    margin: auto;
+    /* padding: 5px 60px 25px; */
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #f5dfe2;
+    font-family: serif;
+    color: black;
+}
 
+.assignment-3 .girl-develop-it {
+    background: white;
+    padding: 10px;
+    border-bottom: 10px solid #fe5a61;
+    z-index: 2;
+    position: relative;
+    top: 5px;
+    margin: 0px 60px -40px;
+}
+
+.assignment-3 .girl-develop-it img.logo {
+    display: flex;
+    margin: auto;
+}
+
+.assignment-3 .girl-develop-it h3,
+.assignment-3 .girl-develop-it h4 {
+    color: #fe5a61;
+    font-size: 24px;
+}
+
+.assignment-3 .girl-develop-it h3 {
+    font-size: 32px;
+}
+
+.assignment-3 .girl-develop-it .about-description span:nth-child(1),
+.assignment-3 .girl-develop-it .about-description span:nth-child(2) {
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.assignment-3 .girl-develop-it .about-description span:nth-child(3) {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.assignment-3 .girl-develop-it .central-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.assignment-3 .girl-develop-it .central-container span:first-child {
+    flex: 1;
+}
+
+.assignment-3 .girl-develop-it .central-container form .row {
+    margin-bottom: 5px;
+}
+
+.assignment-3 .girl-develop-it .central-container form .row input {
+    background: #f5dfe2;
+    border: 1px solid grey;
+}
+
+.assignment-3 .girl-develop-it .central-container form fieldset {
+    margin-bottom: 5px;
+}
+
+.assignment-3 .girl-develop-it .central-container form textarea {
+    display: block;
+    margin: 5px 0;
+}
+
+.assignment-3 .girl-develop-it .central-container span.projects {
+    background: #f5dfe2;
+    border: 1px solid #fe5a61;
+    padding: 0 10px 20px;
+    height: fit-content;
+}
+
+.assignment-3 .girl-develop-it table,
+.assignment-3 .girl-develop-it tr,
+.assignment-3 .girl-develop-it th,
+.assignment-3 .girl-develop-it td {
+    border: 1px solid black;
+}
+
+.assignment-3 .girl-develop-it span.footer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.assignment-3 .girl-develop-it .bold {
+    font-weight: 700;
+}
+
+.assignment-3 .girl-develop-it .minus-top {
+    margin-top: -20px;
+}
+
+.assignment-3 .footer-zeros-ones {
+    color: #fe5a61;
+    word-wrap: break-word;
+    z-index: 1;
+    font-weight: 600;
+}
 /* Assignment 3 */
