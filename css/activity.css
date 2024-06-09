@@ -12,8 +12,8 @@ main.class-activity-1 {
     margin: auto;
     border: 2px solid black;
     font-family: sans-serif;
+    margin: 100px auto 30px;
     position: relative;
-    top: 90px;
 }
 
 .class-activity-1 h1 {
@@ -53,8 +53,8 @@ main.class-activity-2 {
     border: 2px solid black;
     font-family: sans-serif;
     background: #08070d;
+    margin: 100px auto 30px;
     position: relative;
-    top: 120px;
     border-top: 3px solid #f4842e;
     border-bottom: 10px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);

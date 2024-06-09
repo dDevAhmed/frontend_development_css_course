@@ -44,6 +44,7 @@ nav span h3{
 nav ul {
     display: flex;
     gap: 20px;
+    align-items: center;
     /* margin-left: 30px; */
 }
 
@@ -59,6 +60,11 @@ nav ul li a {
 
 nav ul li a:hover{
     color: #fff;
+}
+
+nav ul li a img.nav-course-repo{
+    height: 40px;
+    width: auto;
 }
 
 /* Dropdown container */
@@ -114,3 +120,14 @@ main.index {
     padding: 100px 40px 20px 40px;
     margin-left: 200px;
 }
+
+/* activities/assignments github repo icon */
+.github-repo-icon {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    height: 50px;
+    width: auto;
+    z-index: 10;
+}
+/* activities/assignments github repo icon */

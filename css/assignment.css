@@ -8,10 +8,10 @@ body {
 /* Assignment 1 */
 main.assignment-1 {
     margin: auto;
-    padding: 20px;
+    padding: 0 20px;
     text-align: center;
+    margin: 100px auto 30px;
     position: relative;
-    top: 70px;
 }
 
 main.assignment-1 .the-four-divs-container {
@@ -117,7 +117,6 @@ main.assignment-2 {
 /* #FE5A61 - primary color */
 main.assignment-3 {
     margin: auto;
-    /* padding: 5px 60px 25px; */
     margin: 100px auto 30px;
     position: relative;
     width: 70%;
