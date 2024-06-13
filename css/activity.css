@@ -446,21 +446,11 @@ main.class-activity-5 {
 
 /* class activity 10 */
 main.class-activity-10 {
-    /* background: linear-gradient(270deg, #eff6fe, #fcf9f4); */
     margin: 100px auto 30px;
     position: relative;
     width: 70%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     font-family: sans-serif;
-    /* border-top: 5px solid #0068fc;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px; */
 }
 
 .class-activity-10 table {
@@ -482,11 +472,72 @@ main.class-activity-10 {
     text-transform: uppercase;
 }
 
-.class-activity-10 tr:nth-of-type(even){
-    background: #E08283;
+.class-activity-10 tr:nth-of-type(even) {
+    background: #e08283;
 }
 
-.class-activity-10 tr td:first-child, .class-activity-10 tr td:nth-child(2){
+.class-activity-10 tr td:first-child,
+.class-activity-10 tr td:nth-child(2) {
     text-transform: capitalize;
 }
 /* class activity 10 */
+
+/* class activity 11 */
+main.class-activity-11 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+}
+
+.class-activity-11 table {
+    background: #fff;
+    width: 100%;
+    text-align: left;
+    /* border: 1px solid black;
+    border-collapse: collapse; */
+}
+
+.class-activity-11 th,
+.class-activity-11 td {
+    text-align: center;
+    padding: 10px;
+}
+
+.class-activity-11 th:nth-child(1) {
+    background: #303938;
+    color: white;
+    text-transform: capitalize;
+}
+
+.class-activity-11 th:nth-child(2) {
+    background: #0187ce;
+    color: white;
+    text-transform: capitalize;
+}
+
+.class-activity-11 th:nth-child(3) {
+    background: #db4c46;
+    color: white;
+    text-transform: capitalize;
+}
+
+.class-activity-11 tr td:nth-child(1){
+    background: #E4E2E3;
+}
+
+.class-activity-11 tr td:nth-child(2){
+    background: #C0EAFA;
+}
+
+.class-activity-11 tr td:nth-child(3){
+    background: #FCDADB;
+}
+
+.class-activity-11 p.table-caption {
+    text-align: center;
+    margin: 10px 0;
+    font-style: italic;
+}
+/* class activity 11 */
