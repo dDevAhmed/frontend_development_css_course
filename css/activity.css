@@ -405,11 +405,11 @@ main.class-activity-5 {
     margin: 50px auto;
 }
 
-.class-activity-5 form a.forgotten-password:hover{
+.class-activity-5 form a.forgotten-password:hover {
     color: #0068fc;
 }
 
-.class-activity-5 button.create-new-account{
+.class-activity-5 button.create-new-account {
     background: transparent;
     border: 1px solid #7f8c94;
     color: #4f636e;
@@ -439,7 +439,54 @@ main.class-activity-5 {
     width: auto;
 }
 
-.class-activity-5 div.page-footer span.meta-logo span{
-    color: #4F636E;
+.class-activity-5 div.page-footer span.meta-logo span {
+    color: #4f636e;
 }
 /* class activity 5 */
+
+/* class activity 10 */
+main.class-activity-10 {
+    /* background: linear-gradient(270deg, #eff6fe, #fcf9f4); */
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    /* border-top: 5px solid #0068fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px; */
+}
+
+.class-activity-10 table {
+    background: #ebeff2;
+    width: 100%;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.class-activity-10 th,
+.class-activity-10 td {
+    padding: 10px;
+}
+
+.class-activity-10 th {
+    background: #010080;
+    color: white;
+    text-transform: uppercase;
+}
+
+.class-activity-10 tr:nth-of-type(even){
+    background: #E08283;
+}
+
+.class-activity-10 tr td:first-child, .class-activity-10 tr td:nth-child(2){
+    text-transform: capitalize;
+}
+/* class activity 10 */
