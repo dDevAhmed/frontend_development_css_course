@@ -297,6 +297,8 @@ main.assignment-4 {
     text-align: center;
 }
 
+/* fixme - create a floating label */
+
 .assignment-4 .sign-up-card .sign-up-form-container input,
 .assignment-4 .sign-up-card .sign-up-form-container button {
     display: block;
