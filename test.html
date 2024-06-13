@@ -2,114 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction to CSS</title>
-    <link rel="shortcut icon" href="img/css_favicon/favicon-32x32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Anchor Links</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
-        #first-para {
-            color: blue;
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
         }
 
-        /* Dropdown container */
-        .dropdown {
-            position: relative;
-            display: inline-block;
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        /* Dropdown content (hidden by default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
+        .button {
             text-decoration: none;
-            display: block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            transition: all 0.3s ease;
         }
 
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
+        .button1 {
+            background-color: #3498db;
+            color: white;
         }
 
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
+        .button1:hover {
+            background-color: #2980b9;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .button2 {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .button2:hover {
+            background-color: #27ae60;
+            transform: scale(1.1);
+        }
+
+        .button3 {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .button3:hover {
+            background-color: #c0392b;
+            border: 2px solid white;
+        }
+
+        .button4 {
+            background-color: #f39c12;
+            color: white;
+            border: 2px solid transparent;
+        }
+
+        .button4:hover {
+            background-color: #e67e22;
+            border-color: #d35400;
+        }
+
+        .button5 {
+            background-color: #9b59b6;
+            color: white;
+            font-weight: bold;
+        }
+
+        .button5:hover {
+            background-color: #8e44ad;
+            letter-spacing: 2px;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <span>
-                <img src="img/css-logo.png" alt="CSS Logo">
-                <h3>Intro to CSS</h3>
-            </span>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://ahmedmahmud.vercel.app/" target="_blank">HTML Classes</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)">Class Activities</a>
-                    <div class="dropdown-content">
-                        <a href="class_activity_1.html">Class Activity 1</a>
-                        <a href="class_activity_2.html">Class Activity 2</a>
-                        <a href="class_activity_3.html">Class Activity 3</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)">Assignments</a>
-                    <div class="dropdown-content">
-                        <a href="assignment_1.html">Assignment 1</a>
-                        <a href="assignment_2.html">Assignment 2</a>
-                        <a href="assignment_3.html">Assignment 3</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)">Projects</a>
-                    <div class="dropdown-content">
-                        <a href="project_1.html">Project 1</a>
-                        <a href="project_2.html">Project 2</a>
-                        <a href="project_3.html">Project 3</a>
-                    </div>
-                </li>
-                <li><a href="https://github.com/dDevAhmed/" target="_blank">Author</a></li>
-            </ul>
-        </nav>
-    </header>
-    <aside>
-        <!-- <h3>CSS Class</h3>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="class_activity_1.html">Class Activity 1</a></li>
-            <li><a href="assignment_1.html">Assignment 1</a></li>
-        </ul> -->
-    </aside>
-    <main class="index">
-        <section>
-            <h3>Welcome to CSS</h3>
-            <p>The purpose of this class is to learn how to use CSS to style HTML documents, enhancing the visual appeal and
-                usability of websites.</p>
-            <p id="first-para" style="column-count: 5; color: red">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
-                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
-                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
-                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
-                id ducimus ut facilis assumenda corrupti sit necessitatibus
-                explicabo similique dolorum earum, at inventore neque.
-            </p>
-        </section>
-    </main>
+    <div class="button-container">
+        <a href="#" class="button button1">Button 1</a>
+        <a href="#" class="button button2">Button 2</a>
+        <a href="#" class="button button3">Button 3</a>
+        <a href="#" class="button button4">Button 4</a>
+        <a href="#" class="button button5">Button 5</a>
+    </div>
 </body>
 
 </html>
