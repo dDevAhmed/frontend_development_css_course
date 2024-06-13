@@ -304,7 +304,7 @@ main.assignment-4 {
     margin-bottom: 10px;
 }
 
-.assignment-4 .sign-up-card .sign-up-form-container input{
+.assignment-4 .sign-up-card .sign-up-form-container input {
     padding: 15px;
     background: #dddddd;
     outline: none;
@@ -312,7 +312,7 @@ main.assignment-4 {
     border-radius: 5px;
 }
 
-.assignment-4 .sign-up-card .sign-up-form-container button{
+.assignment-4 .sign-up-card .sign-up-form-container button {
     background: #357bf5;
     border: none;
     padding: 15px;
@@ -323,7 +323,146 @@ main.assignment-4 {
     font-size: 16px;
 }
 
-.assignment-4 .sign-up-card .sign-up-form-container .social-links a img{
+.assignment-4 .sign-up-card .sign-up-form-container .social-links a img {
     height: 30px;
 }
 /* Assignment 4 */
+
+/* Assignment 5 */
+main.assignment-5 {
+    margin: auto;
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #262626;
+    font-family: sans-serif;
+    color: black;
+    padding: 50px 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.assignment-5 .button {
+    text-decoration: none;
+    padding: 15px 25px;
+    text-align: center;
+    color: white;
+}
+
+.assignment-5 .button-1 {
+    background: #ff1703;
+}
+
+.assignment-5 .button-2 {
+    background: #ffa72c;
+    border-radius: 5px;
+}
+
+.assignment-5 .button-3 {
+    background: #85057c;
+    border: 1px solid white;
+}
+
+.assignment-5 .button-4 {
+    background: #2901f8;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.assignment-5 .button-5 {
+    background: #00801f;
+    border-radius: 5px;
+    border: 1px dotted white;
+}
+
+.assignment-5 .button-6 {
+    background: #00801f;
+    border: 2px dashed white;
+}
+
+.assignment-5 .button-7 {
+    background: #fdff46;
+    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.assignment-5 .button-8 {
+    background: #ff4910;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.assignment-5 .button-9 {
+    background: #00801f;
+    outline: 2px dashed;
+    outline-offset: -5px;
+}
+
+.assignment-5 .button-10 {
+    background: #424242;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assignment-5 .button-10 span {
+    border-top: 2px dashed #e3e8a8;
+    border-bottom: 2px dashed #e3e8a8;
+    padding: 10px;
+    width: 100%;
+}
+
+.assignment-5 .button-11 {
+    background: #ff15de;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.assignment-5 .button-11 span.circle {
+    background: #ffa72c;
+    height: 35px;
+    width: 35px;
+    border-radius: 25px;
+}
+
+.assignment-5 .button-12 {
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 3px solid white;
+}
+
+.assignment-5 .button-12 span.circle {
+    background: #85057c;
+    height: 35px;
+    width: 35px;
+    border-radius: 25px;
+}
+
+.assignment-5 .button-13 {
+    background: linear-gradient(90deg, #000, #66ee42, #000);
+}
+
+.assignment-5 .button-14 {
+    background: linear-gradient(90deg, #ec1417, #2f01df);
+}
+
+.assignment-5 .button-15 {
+    background: repeating-radial-gradient(#00f03f, #00f03f, #095e94);
+}
+
+.assignment-5 .button-16 {
+    background: #262626;
+    box-shadow: 0px 0px 20px 0px lightblue;
+}
+/* Assignment 5 */
