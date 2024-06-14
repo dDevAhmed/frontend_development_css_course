@@ -562,7 +562,7 @@ main.class-activity-6 {
 }
 /* class activity 6 */
 
-/* fixme - class activity 7, 8, 9 */
+/* fixme - class activity 7 */
 
 /* class activity 8 */
 main.class-activity-8 {
@@ -578,23 +578,23 @@ main.class-activity-8 {
     gap: 40px;
 }
 
-.class-activity-8 span.pill{
+.class-activity-8 span.pill {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #F8931D;
+    border: 1px solid #f8931d;
     border-radius: 35px;
-    background: #F8931D;
+    background: #f8931d;
     height: fit-content;
 }
 
-.class-activity-8 span.pill i.fa-check{
+.class-activity-8 span.pill i.fa-check {
     color: white;
     font-size: 32px;
     padding: 5px;
 }
 
-.class-activity-8 span.pill p{
+.class-activity-8 span.pill p {
     text-align: center;
     background: white;
     margin: 3px;
@@ -606,7 +606,7 @@ main.class-activity-8 {
     font-size: 14px;
 }
 
-.class-activity-8 .footer-logo{
+.class-activity-8 .footer-logo {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -614,6 +614,89 @@ main.class-activity-8 {
     width: auto;
 }
 /* class activity 8 */
+
+/* class activity 9 */
+main.class-activity-9 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 35%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    background: #f6f6f6;
+    padding: 50px;
+}
+
+.class-activity-9 .list-container {
+    background: #fefefe;
+    border-radius: 10px;
+    border-bottom: 25px solid #03a9f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* width: 100%; */
+}
+
+.class-activity-9 .list-container .header {
+    text-align: center;
+    background: #03a9f5;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #edffff;
+    font-size: 24px;
+}
+
+.class-activity-9 .list-container ul {
+    counter-reset: item-counter;
+    display: block;
+    width: 100%;
+    margin-left: -20px;
+}
+
+.class-activity-9 .list-container ul li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 50px;
+    display: block;
+    width: 100%;
+    
+    &:hover {
+        transform: scale(1.2);
+        transition: transform 0.2s ease-in-out;
+        background: rgb(36, 188, 253, 0.8);
+        color: #fefefe;
+    }
+
+    &:hover::before {
+        background: #fefefe;
+        color: #28b8ff;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid lightblue;
+    }
+}
+
+.class-activity-9 .list-container ul li::before {
+    content: counter(item-counter) "";
+    counter-increment: item-counter;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #fefefe;
+    background: #28b8ff;
+    border-radius: 50%;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+/* class activity 9 */
 
 /* class activity 10 */
 main.class-activity-10 {
