@@ -493,7 +493,7 @@ main.class-activity-6 {
 }
 
 .class-activity-6 .login-form .input-row {
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
     border-radius: 5px;
     background: white;
     display: flex;
@@ -526,7 +526,11 @@ main.class-activity-6 {
     margin-inline-start: -3px;
 }
 
-.class-activity-6 .login-form .remember-me-forgot-password label input[type="checkbox"] {
+.class-activity-6
+    .login-form
+    .remember-me-forgot-password
+    label
+    input[type="checkbox"] {
     accent-color: #be2edd;
 }
 
@@ -548,17 +552,68 @@ main.class-activity-6 {
     cursor: pointer;
 }
 
-.class-activity-6 .login-form .signup-now{
+.class-activity-6 .login-form .signup-now {
     margin-top: 20px;
 }
 
-.class-activity-6 .login-form .signup-now a{
+.class-activity-6 .login-form .signup-now a {
     text-decoration: none;
     color: #be2edd;
 }
 /* class activity 6 */
 
 /* fixme - class activity 7, 8, 9 */
+
+/* class activity 8 */
+main.class-activity-8 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    background: #808080;
+    padding: 150px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.class-activity-8 span.pill{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #F8931D;
+    border-radius: 35px;
+    background: #F8931D;
+    height: fit-content;
+}
+
+.class-activity-8 span.pill i.fa-check{
+    color: white;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.class-activity-8 span.pill p{
+    text-align: center;
+    background: white;
+    margin: 3px;
+    padding: 10px;
+    flex: 1;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.class-activity-8 .footer-logo{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 80px;
+    width: auto;
+}
+/* class activity 8 */
 
 /* class activity 10 */
 main.class-activity-10 {
