@@ -444,7 +444,121 @@ main.class-activity-5 {
 }
 /* class activity 5 */
 
-/* fixme - class activity 6, 7, 8, 9 */
+/* class activity 6 */
+main.class-activity-6 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    background: #be2edd;
+    padding: 80px;
+}
+
+.class-activity-6 .login-form {
+    background: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.class-activity-6 .login-form .form-header {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.class-activity-6 .login-form .social-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* margin-bottom: 20px  ; */
+}
+
+.class-activity-6 .login-form .social-icons a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.class-activity-6 .login-form .social-icons a:first-child {
+    background: #4265b6;
+}
+
+.class-activity-6 .login-form .social-icons a:last-child {
+    background: #1ea1f1;
+}
+
+.class-activity-6 .login-form .input-row {
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    background: white;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.class-activity-6 .login-form .input-row i.fa {
+    color: #7c7d7f;
+}
+
+.class-activity-6 .login-form input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.class-activity-6 .login-form .remember-me-forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-activity-6 .login-form .remember-me-forgot-password label {
+    display: flex;
+    align-items: center;
+    color: #7c7d7f;
+    margin-inline-start: -3px;
+}
+
+.class-activity-6 .login-form .remember-me-forgot-password label input[type="checkbox"] {
+    accent-color: #be2edd;
+}
+
+.class-activity-6 .login-form .remember-me-forgot-password a {
+    color: #be2edd;
+    text-decoration: none;
+}
+
+.class-activity-6 .login-form .login-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #be2edd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.class-activity-6 .login-form .signup-now{
+    margin-top: 20px;
+}
+
+.class-activity-6 .login-form .signup-now a{
+    text-decoration: none;
+    color: #be2edd;
+}
+/* class activity 6 */
+
+/* fixme - class activity 7, 8, 9 */
 
 /* class activity 10 */
 main.class-activity-10 {
@@ -523,16 +637,18 @@ main.class-activity-11 {
     text-transform: capitalize;
 }
 
-.class-activity-11 tr td:nth-child(1){
-    background: #E4E2E3;
+.class-activity-11 tr td:nth-child(1) {
+    background: #e4e2e3;
 }
 
-.class-activity-11 tr td:nth-child(2){
-    background: #C0EAFA;
+.class-activity-11 tr td:nth-child(2) {
+    background: #c0eafa;
+    text-transform: capitalize;
 }
 
-.class-activity-11 tr td:nth-child(3){
-    background: #FCDADB;
+.class-activity-11 tr td:nth-child(3) {
+    background: #fcdadb;
+    text-transform: capitalize;
 }
 
 .class-activity-11 p.table-caption {
