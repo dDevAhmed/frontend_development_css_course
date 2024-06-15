@@ -297,13 +297,34 @@ main.assignment-4 {
     text-align: center;
 }
 
-/* fixme - create a floating label */
+.assignment-4 .sign-up-card .sign-up-form-container form.signup-form span.input-row{
+    position: relative;
+}
+
+.assignment-4 .sign-up-card .sign-up-form-container form.signup-form span.input-row label{
+    position: absolute;
+    left: -145px;
+    top: 15px;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.2s;
+    color: grey;
+}
+
+.assignment-4 .sign-up-card .sign-up-form-container form.signup-form span.input-row input:focus + label{
+    top: -18px;
+    left: -165px;
+    font-size: 12px;
+    color: #357bf5;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
 
 .assignment-4 .sign-up-card .sign-up-form-container input,
 .assignment-4 .sign-up-card .sign-up-form-container button {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .assignment-4 .sign-up-card .sign-up-form-container input {
@@ -321,6 +342,7 @@ main.assignment-4 {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
+    margin-bottom: 10px;
     color: white;
     font-size: 16px;
 }
