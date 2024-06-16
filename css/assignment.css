@@ -297,11 +297,20 @@ main.assignment-4 {
     text-align: center;
 }
 
-.assignment-4 .sign-up-card .sign-up-form-container form.signup-form span.input-row{
+.assignment-4
+    .sign-up-card
+    .sign-up-form-container
+    form.signup-form
+    span.input-row {
     position: relative;
 }
 
-.assignment-4 .sign-up-card .sign-up-form-container form.signup-form span.input-row label{
+.assignment-4
+    .sign-up-card
+    .sign-up-form-container
+    form.signup-form
+    span.input-row
+    label {
     position: absolute;
     left: -145px;
     top: 15px;
@@ -311,7 +320,13 @@ main.assignment-4 {
     color: grey;
 }
 
-.assignment-4 .sign-up-card .sign-up-form-container form.signup-form span.input-row input:focus + label{
+.assignment-4
+    .sign-up-card
+    .sign-up-form-container
+    form.signup-form
+    span.input-row
+    input:focus
+    + label {
     top: -18px;
     left: -165px;
     font-size: 12px;
@@ -375,7 +390,7 @@ main.assignment-5 {
     color: white;
 }
 
-.assignment-5 .button:hover{
+.assignment-5 .button:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
@@ -496,3 +511,176 @@ main.assignment-5 {
     box-shadow: 0px 0px 20px 0px lightblue;
 }
 /* Assignment 5 */
+
+/* Assignment 6 */
+main.assignment-6 {
+    margin: auto;
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    font-family: sans-serif;
+    color: #020202;
+}
+
+.assignment-6 nav.assignment-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav.assignment-6 .nav-logo {
+    height: 30px;
+    width: auto;
+}
+
+.assignment-6 nav.assignment-6 .nav-center-links {
+    text-transform: uppercase;
+    font-size: 14px;
+    /* padding: 10px 20px; */
+
+    li:hover {
+        border-bottom: 2px solid #020202;
+    }
+}
+
+.assignment-6 nav.assignment-6 .nav-right-links li:hover {
+    transform: scale(1.2);
+}
+
+.assignment-6 section.hero {
+    height: 70vh;
+    background-image: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("../img/happy-man.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    span.slider-controller {
+        color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        font-size: 32px;
+        position: absolute;
+
+        i.fa {
+            padding: 5px;
+            text-align: center;
+            border-radius: 50%;
+
+            &:hover {
+                cursor: pointer;
+               color: rgba(255, 255, 255, 0.9);
+            }
+        }
+    }
+}
+
+.assignment-6 section.hero p,
+section.hero h3,
+section.hero a {
+    text-transform: uppercase;
+}
+
+.assignment-6 section.hero h3 {
+    margin-top: -5px;
+    font-size: 48px;
+}
+
+.assignment-6 section.hero a {
+    background: white;
+    color: #020202;
+    padding: 10px 60px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -30px;
+    border: none;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in-out;
+    }
+}
+
+.assignment-6 section.hero .subscribe-div {
+    position: absolute;
+    bottom: 145px;
+    right: 10px;
+    width: 200px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.assignment-6 section.hero .subscribe-div i.fa-times {
+    color: #020202;
+    background: white;
+    padding: 5px;
+    font-size: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+}
+
+.assignment-6 section.hero .subscribe-div img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.assignment-6 section.hero .subscribe-div .input-container {
+    background: white;
+    color: #020202;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.assignment-6 section.hero .subscribe-div .input-container form {
+    font-size: 8px;
+
+    p {
+        text-align: center;
+    }
+
+    label {
+        font-weight: 600;
+        color: #020202;
+        margin-top: 5px;
+    }
+
+    input {
+        margin: 3px auto;
+        display: block;
+        width: 100%;
+        padding: 3px;
+        outline: none;
+    }
+
+    button {
+        margin-top: 5px;
+        background: #595959;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 3px 15px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}
+/* Assignment 6 */
