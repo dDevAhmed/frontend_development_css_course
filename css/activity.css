@@ -562,7 +562,98 @@ main.class-activity-6 {
 }
 /* class activity 6 */
 
-/* fixme - class activity 7 */
+/* class activity 7 */
+main.class-activity-7 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-activity-7 .button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.class-activity-7 .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Button 1: Simple Hover Effect */
+.class-activity-7 .btn1 {
+    background-color: #3498db;
+    color: white;
+}
+
+.class-activity-7 .btn1:hover {
+    background-color: #2980b9;
+}
+
+/* Button 2: Border Slide Effect */
+.class-activity-7 .btn2 {
+    background-color: transparent;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+
+.class-activity-7 .btn2:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Button 3: Gradient Background */
+.class-activity-7 .btn3 {
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    color: white;
+}
+
+.class-activity-7 .btn3:hover {
+    background: linear-gradient(to right, #3498db, #8e44ad);
+}
+
+/* Button 4: Shadow and Scale Effect */
+.class-activity-7 .btn4 {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.class-activity-7 .btn4:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button 5: Underline from Left */
+.class-activity-7 .btn5 {
+    background-color: transparent;
+    color: #f39c12;
+    position: relative;
+}
+
+.class-activity-7 .btn5::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+
+.class-activity-7 .btn5:hover::after {
+    width: 100%;
+}
+/* class activity 7 */
 
 /* class activity 8 */
 main.class-activity-8 {
@@ -659,7 +750,7 @@ main.class-activity-9 {
     padding-left: 50px;
     display: block;
     width: 100%;
-    
+
     &:hover {
         transform: scale(1.2);
         transition: transform 0.2s ease-in-out;
