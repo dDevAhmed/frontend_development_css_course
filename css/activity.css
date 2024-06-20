@@ -929,3 +929,63 @@ main.class-activity-12 {
     }
 }
 /* class activity 12 */
+
+/* class activity 13 */
+main.class-activity-13 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: serif;
+    padding: 10px 20px 20px;
+
+    h1{
+        margin-top: unset;
+    }
+
+    div {
+        border: 1px solid black;
+        display: flow-root;
+        gap: 10px;
+        /* color: white; */
+
+        p{
+            margin: unset;
+        }
+
+        span {
+            background: #F2F2F2;
+            width: 30%;
+            height: 150px;
+            width: 150px;
+            float: left;
+            padding: 10px;
+            text-align: center;
+            margin: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            align-content: center;
+            justify-content: center;
+
+            img{
+                width: 100%;
+            }
+
+            small{
+                color: #444349;
+                margin-top: -5px;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .float-right{
+        float: right;
+    }
+}
+/* class activity 13 */
