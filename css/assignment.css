@@ -583,7 +583,7 @@ nav.assignment-6 .nav-logo {
 
             &:hover {
                 cursor: pointer;
-               color: rgba(255, 255, 255, 0.9);
+                color: rgba(255, 255, 255, 0.9);
             }
         }
     }
@@ -684,3 +684,35 @@ section.hero a {
     }
 }
 /* Assignment 6 */
+
+/* Assignment 7 */
+main.assignment-7 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    /* overflow-y: scroll; */
+    height: 500px;
+}
+
+.assignment-7 iframe {
+    width: 100%;
+    height: 90%;
+}
+
+.assignment-7 div.expand-fullscreen a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+
+    img{
+        height: 25px;
+        width: auto;
+    }
+}
+/* Assignment 7 */
