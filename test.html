@@ -124,6 +124,52 @@
                 transform: rotateZ(360deg);
             }
         }
+
+        .introduction {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #000;
+            padding: 20px;
+            background: #ffa500;
+            /* Orange background */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .introduction h2 {
+            font-size: 2rem;
+            color: #191970;
+            /* Dark blue color for the heading */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .introduction .highlight {
+            font-weight: bold;
+            color: #ffa500;
+            /* Orange text color */
+            background: #000;
+            /* Black background */
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+
+        .introduction p {
+            margin-bottom: 15px;
+        }
+
+        .introduction p .highlight {
+            display: inline-block;
+            transition: transform 0.3s, background 0.3s, color 0.3s;
+        }
+
+        .introduction p .highlight:hover {
+            transform: scale(1.1);
+            background: #ffae42;
+            /* Lighter orange background */
+            color: #fff;
+            /* White text color */
+        }
     </style>
 </head>
 
@@ -138,11 +184,25 @@
         </ul>
     </nav>
 
-    <section class="section section-1" id="section-1">Section 1</section>
-    <section class="section section-2" id="section-2">Section 2</section>
+    <section class="introduction">
+        <h2>Hi, I'm Ahmed Mahmud 👋</h2>
+        <p>I'm your <span class="highlight">go-to person</span> for turning <span class="highlight">pixels into
+                perfection</span> and making the web a better place, one line of code at a time. By day, I transform
+            complex code into seamless user experiences, making sure every click, swipe, and scroll feels just right.
+            Armed with my <span class="highlight">trusty keyboard</span>, I create <span class="highlight">responsive
+                designs</span> and <span class="highlight">interactive elements</span> that keep users engaged and
+            delighted.</p>
+        <p>When I'm not busy crafting digital wonders, you'll probably find me <span class="highlight">debugging with
+                the patience of a saint</span> —or bribing my browser with <span class="highlight">cookies for good
+                behavior</span>. With a solid command of <span class="highlight">HTML, CSS, and JavaScript</span>, I
+            bring the front end to life with a good dose of humor and a lot of passion.</p>
+    </section>
+
+    <!-- <section class="section section-1" id="section-1">Section 1</section> -->
+    <!-- <section class="section section-2" id="section-2">Section 2</section>
     <section class="section section-3" id="section-3">Section 3</section>
     <section class="section section-4" id="section-4">Section 4</section>
-    <section class="section section-5" id="section-5">Section 5</section>
+    <section class="section section-5" id="section-5">Section 5</section> -->
 
     <div class="cookies-consent">
         <h3>We love cookies <span class="cookie-icon">🍪</span></h3>
