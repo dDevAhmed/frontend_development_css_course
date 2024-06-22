@@ -178,12 +178,50 @@ section.skills {
         span.tools {
             flex: 1;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            justify-items: center;
 
-            img {
-                width: 80px;
+            span.animation-wheel {
+                border-radius: 50%;
+                height: 350px;
+                width: 350px;
+                margin: auto;
+                position: relative;
+
+                animation-name: wheel;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+
+                img {
+                    width: 80px;
+                    position: absolute;
+
+                    animation: tool 10s linear infinite;
+                }
+
+                img:nth-child(1) {
+                    right: -8.5%;
+                    top: 40%;
+                }
+                img:nth-child(2) {
+                    right: 17%;
+                    top: 85.5%;
+                }
+                img:nth-child(3) {
+                    right: 67%;
+                    top: 85.5%;
+                }
+                img:nth-child(4) {
+                    left: -8.5%;
+                    top: 40%;
+                }
+                img:nth-child(5) {
+                    left: 17%;
+                    top: -5%;
+                }
+                img:nth-child(6) {
+                    right: 17%;
+                    top: -5%;
+                }
             }
         }
 
@@ -217,6 +255,33 @@ section.skills {
                 }
             }
         }
+    }
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes tool {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(-90deg) scale(1.2);
+    }
+    50% {
+        transform: rotate(-180deg) scale(1);
+    }
+    75% {
+        transform: rotate(-270deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(-360deg) scale(1);
     }
 }
 
