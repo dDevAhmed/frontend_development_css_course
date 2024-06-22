@@ -610,8 +610,10 @@ section.about h3.section-title::after {
         min-height: 100vh;
         min-height: 100vh;
         width: 100vw;
-        position: sticky;
-        top: 0px;
+        /* position: sticky; */
+        /* top: 0; */
+        /* overflow-y: auto; */
+        top: -50vh;
     }
 
     div.about-container,
@@ -651,6 +653,7 @@ section.about h3.section-title::after {
         div.about-container {
             line-height: 1.2;
             /* margin-top: 50px; */
+            gap: 20px;
 
             span.image-background {
                 width: 80%;
