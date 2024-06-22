@@ -1,6 +1,13 @@
+:root{
+    --primary-blue-color: #158FE6;
+    --secondary-blue-color: #35C1F1;
+    --primary-black: #333;
+    --primary-white: #f9f9f9;
+    --primary-gradient-color: linear-gradient(-90deg, #158FE6, #35C1F1);
+}
+
 * {
-    /* border: 1px dashed darksalmon;
-   margin: 10px; */
+    box-sizing: border-box;
 }
 
 body {
@@ -9,22 +16,16 @@ body {
     overflow-x: hidden;
 }
 
-/* background-color: #f4f4f4;
-border-right: 1px solid #ccc;
-border-right: 1px solid #333; */
-
 header nav {
-    background: orange;
-    /* padding: 10px; */
+    background: var(--primary-gradient-color);
     position: fixed;
     width: 100%;
     top: 0;
-    color: #333;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 11;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 nav span {
@@ -38,14 +39,13 @@ nav span img{
 }
 
 nav span h3{
-    color: #333;
+    color: var(--primary-black);
 }
 
 nav ul {
     display: flex;
     gap: 20px;
     align-items: center;
-    /* margin-left: 30px; */
 }
 
 nav ul li{
@@ -54,17 +54,20 @@ nav ul li{
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--primary-black);
     font-weight: 700;
 }
 
 nav ul li a:hover{
-    /* color: #fff; */
 }
 
 nav ul li a img.nav-course-repo{
     height: 40px;
     width: auto;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 /* Dropdown container */
@@ -77,7 +80,7 @@ nav .dropdown {
 nav .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--primary-white);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -85,19 +88,17 @@ nav .dropdown-content {
 
 /* Links inside the dropdown */
 nav .dropdown-content a {
-    color: #333;
+    color: var(--primary-black);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 nav .dropdown-content a:hover {
-    background-color: orange;
+    background: var(--primary-gradient-color);
     color: white;
 }
 
-/* Show the dropdown menu on hover */
 nav .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -111,7 +112,7 @@ aside {
     height: 100%;
     position: fixed;
     top: 0;
-    background: #333;
+    background: var(--primary-black);
     min-width: 200px;
     z-index: -1;
 }
@@ -129,5 +130,10 @@ main.index {
     height: 50px;
     width: auto;
     z-index: 10;
+    border-radius: 50%;
+
+    &:hover{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
 }
 /* activities/assignments github repo icon */
