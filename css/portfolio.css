@@ -1,8 +1,5 @@
 :root {
-    scroll-behavior: smooth;
-
-    font-size: 16px;
-
+    
     --primary-white: #f9f9f9;
     --primary-black: #000;
 }
@@ -11,10 +8,15 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 
 /* general rules */
@@ -64,7 +66,7 @@ nav ul li a {
         height: 18px;
     }
 
-    &:hover {
+    &:hover, .active, .active:focus {
         color: var(--primary-white);
         font-weight: 700;
         background: var(--primary-black);
@@ -269,19 +271,19 @@ section.skills {
 
 @keyframes tool {
     0% {
-        transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(0.8);
     }
     25% {
-        transform: rotate(-90deg) scale(1.2);
+        transform: rotate(-90deg) scale(0.9);
     }
     50% {
-        transform: rotate(-180deg) scale(1);
+        transform: rotate(-180deg) scale(0.8);
     }
     75% {
-        transform: rotate(-270deg) scale(1.2);
+        transform: rotate(-270deg) scale(0.9);
     }
     100% {
-        transform: rotate(-360deg) scale(1);
+        transform: rotate(-360deg) scale(0.8);
     }
 }
 
@@ -367,7 +369,6 @@ section.contact {
         }
 
         div.social-container {
-            /* background: red; */
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -412,30 +413,6 @@ section.contact {
     }
 }
 
-/* .collapse-fullscreen {
-    position: fixed;
-    bottom: 0;
-    color: #333;
-    background: white;
-    display: block;
-    width: 100%;
-
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        color: #333;
-        text-decoration: none;
-        padding: 10px;
-
-        img {
-            height: 16px;
-            width: auto;
-        }
-    }
-} */
-
 .section-title {
     text-align: center;
     font-size: 2rem;
@@ -446,6 +423,22 @@ section.contact {
     text-align: center;
     margin-top: -30px;
     font-size: 1.2rem;
+}
+
+.back-to-top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: var(--primary-white);
+    color: var(--primary-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 @media only screen and (max-width: 768px) {
