@@ -124,7 +124,8 @@ section.home {
         display: inline-block;
         width: fit-content;
         background: black;
-        color: white;
+        color: yellow;
+        border: 2px solid black;
         padding: 10px 20px;
         border-radius: 5px;
         text-decoration: none;
@@ -138,10 +139,8 @@ section.home {
 
         &:hover {
             transform: scale(1.1);
-            border: 2px solid black;
             color: black;
             background: transparent;
-            padding: 8px 20px;
         }
     }
 }
@@ -421,18 +420,16 @@ section.contact {
                 width: 100%;
                 background: #fff;
                 color: black;
+                border: 2px solid white;
                 outline: none;
-                border: none;
                 border-radius: 5px;
                 font-weight: 900;
                 padding: 15px 20px;
                 cursor: pointer;
                 margin-top: 10px;
-
+                
                 &:hover {
-                    padding: 13px 20px;
-                    border: 2px solid white;
-                    background: black;
+                    background: transparent;
                     color: white;
                 }
             }
@@ -487,6 +484,21 @@ section.contact {
     text-align: center;
     font-size: 2rem;
     margin-top: unset;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #28b8ff; /* Adjust to your desired color */
+    transition: width 0.3s ease-in-out;
+}
+
+.section:hover .section-title::after {
+    width: 100%;
 }
 
 .section-subtitle {
