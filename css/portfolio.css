@@ -613,7 +613,7 @@ section.about h3.section-title::after {
         /* position: sticky; */
         /* top: 0; */
         /* overflow-y: auto; */
-        top: -50vh;
+        top: -70vh;
     }
 
     div.about-container,
