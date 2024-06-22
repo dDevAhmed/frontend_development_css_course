@@ -76,8 +76,7 @@ nav ul li a {
 
 nav ul li a:hover > span {
     display: inline-block;
-    /* transition: 0.2s; */
-    /* transition: transform 0.2s ease-in-out */
+    transition: all 0.2s ease-in-out;
 }
 
 nav ul li a img.nav-course-repo {
@@ -91,7 +90,6 @@ section {
     position: sticky;
     top: 0px;
     padding: 100px 200px;
-    position: relative;
 }
 
 section.home {
@@ -168,7 +166,7 @@ section.home {
 section.about {
     background-color: orange;
 
-    div.about {
+    div.about-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -183,6 +181,7 @@ section.about {
             border-radius: 15px;
 
             img {
+                width: 100%;
                 border-radius: 15px;
                 background: var(--primary-black);
                 position: relative;
@@ -208,7 +207,7 @@ section.about {
             } */
 
             p.about-me {
-                margin-top: 50px;
+                margin-top: 30px;
             }
         }
     }
@@ -287,6 +286,10 @@ section.skills {
             flex: 1;
             display: flex;
             align-items: center;
+
+            img {
+                width: 100%;
+            }
 
             span.screen-note {
                 position: absolute;
@@ -498,18 +501,17 @@ section.contact {
     left: 0;
     width: 0;
     height: 3px;
-    background: var(--primary-white); /* Adjust to your desired color */
+    background: var(--primary-white);
     transition: width 0.3s ease-in-out;
 }
 
-section.about h3.section-title{
+section.about h3.section-title {
     margin-left: unset;
     margin-right: unset;
 }
 
-section.about h3.section-title::after{
-    background: var(--primary-black); /* Adjust to your desired color */
-
+section.about h3.section-title::after {
+    background: var(--primary-black);
 }
 
 .section:hover .section-title::after {
@@ -520,6 +522,7 @@ section.about h3.section-title::after{
     text-align: center;
     margin-top: -30px;
     font-size: 1.2rem;
+    font-style: italic;
 }
 
 .back-to-top {
@@ -538,8 +541,195 @@ section.about h3.section-title::after{
     z-index: 1;
 }
 
+@media only screen and (max-width: 1200px) {
+    section {
+        padding: 30px 30px;
+        min-height: 100vh;
+    }
+}
+
 @media only screen and (max-width: 768px) {
-    header nav ul {
+    header nav {
+        /* fixme - remove this */
         display: none;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background: var(--primary-white);
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--primary-black);
+        font-weight: 700;
+        background: none;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        .active,
+        .active:focus {
+            color: var(--primary-white);
+            font-weight: 700;
+            background: var(--primary-black);
+            transform: translateY(-20%);
+
+            transform: translateY(-20%) scale(1.1);
+        }
+    }
+
+    .nav-link-text {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    section {
+        min-height: 100vh;
+        width: 100vw;
+        position: sticky;
+        top: 0px;
+    }
+
+    div.about-container,
+    div.skills-container,
+    div.contact-container {
+        flex-direction: column;
+    }
+
+    section.home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p.greetings {
+            font-size: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: -20px;
+            /* overflow: hidden; */
+        }
+
+        p.title {
+            font-size: 1rem;
+            margin-top: -10px;
+        }
+
+        a.learn-more {
+            padding: 5px 10px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    }
+
+    section.about {
+        div.about-container {
+            line-height: 1.2;
+            margin-top: 50px;
+
+            span.image-background {
+                width: 80%;
+                margin: auto;
+                border: none;
+
+                img {
+                    width: 100%;
+                    position: relative;
+                    bottom: 0px;
+                    right: 0px;
+                    left: 0;
+                }
+            }
+
+            span {
+                h3.section-title {
+                    /* fixme - align center */
+                    /* display: inline-block; */
+                }
+
+                .section-subtitle {
+                    margin-top: -10px;
+                }
+
+                .section-title,
+                .section-subtitle {
+                    /* text-align: center; */
+                }
+
+                p.about-me {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    section.skills {
+        div.skills-container {
+            span.tools {
+                span.animation-wheel {
+                    height: 200px;
+                    width: 200px;
+                    margin: 30px auto 10px;
+
+                    img {
+                        width: 50px;
+                        position: absolute;
+                    }
+                }
+            }
+
+            span.repos {
+                span.screen-note {
+                    top: 20px;
+
+                    span {
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.contact {
+        div.contact-container {
+            div.social-container {
+                span.call-mail {
+                    a {
+                        font-size: 1.2rem;
+
+                        img {
+                            height: 50px;
+                        }
+                    }
+                }
+
+                span.social-links {
+                    margin-top: 20px;
+                    justify-content: flex-start;
+
+                    a img {
+                        height: 50px;
+                    }
+                }
+            }
+        }
     }
 }
