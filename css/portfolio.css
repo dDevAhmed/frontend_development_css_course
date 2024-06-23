@@ -88,14 +88,20 @@ nav ul li a img.nav-course-repo {
 }
 
 section {
-    min-height: 100vh;
-    width: 100vw;
+}
+
+div.hero-wrapper,
+div.about-wrapper,
+div.skills-wrapper,
+div.contact-wrapper {
     position: sticky;
     top: 0px;
     padding: 100px 200px;
+    min-height: 100vh;
+    width: 100vw;
 }
 
-section.home {
+div.hero-wrapper {
     background-color: yellow;
     display: flex;
     flex-direction: column;
@@ -167,7 +173,7 @@ section.home {
     }
 }
 
-section.about {
+div.about-wrapper {
     background-color: orange;
 
     div.about-container {
@@ -217,7 +223,7 @@ section.about {
     }
 }
 
-section.skills {
+div.skills-wrapper {
     background-color: orangered;
     color: white;
 
@@ -363,7 +369,7 @@ section.skills {
     }
 }
 
-section.contact {
+div.contact-wrapper {
     background-color: black;
     color: white;
 
@@ -510,16 +516,16 @@ section.contact {
     transition: width 0.3s ease-in-out;
 }
 
-section.about h3.section-title {
+div.about-wrapper h3.section-title {
     margin-left: unset;
     margin-right: unset;
 }
 
-section.about h3.section-title::after {
+div.about-wrapper h3.section-title::after {
     background: var(--primary-black);
 }
 
-.section:hover .section-title::after {
+section:hover .section-title::after {
     width: 100%;
 }
 
@@ -610,14 +616,17 @@ section.about h3.section-title::after {
         font-weight: 400;
     }
 
-    section {
+    div.hero-wrapper,
+    div.about-wrapper,
+    div.skills-wrapper,
+    div.contact-wrapper {
         padding: 30px 30px;
         min-height: 100vh;
         width: 100vw;
         top: -70vh;
     }
 
-    section.home {
+    div.hero-wrapper {
         top: 0;
     }
 
@@ -627,7 +636,7 @@ section.about h3.section-title::after {
         flex-direction: column;
     }
 
-    section.home {
+    div.hero-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -654,7 +663,7 @@ section.about h3.section-title::after {
         }
     }
 
-    section.about {
+    div.about-wrapper {
         div.about-container {
             line-height: 1.2;
             /* margin-top: 50px; */
@@ -697,7 +706,7 @@ section.about h3.section-title::after {
         }
     }
 
-    section.skills {
+    div.skills-wrapper {
         div.skills-container {
             span.tools {
                 span.animation-wheel {
@@ -724,7 +733,7 @@ section.about h3.section-title::after {
         }
     }
 
-    section.contact {
+    div.contact-wrapper {
         padding-bottom: 100px;
         div.contact-container {
             div.social-container {
