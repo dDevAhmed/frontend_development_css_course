@@ -18,31 +18,37 @@
             margin: 0;
         }
 
-        .section-container {
+        .section {
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 24px;
+            padding: 20px;
             /* fixme - this disables the section link in reverse  */
             position: sticky;
             top: 0px;
         }
 
-        .section-container {
-            background: red;
-            /* height: 500px; */
+        div.section-container {
+            /* background: red; */
+            height: 500px;
             width: 50%;
             margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
         }
 
         .section-1 {
             background-color: yellow;
+            color: white;
         }
 
         .section-2 {
             background-color: orange;
-            color: white;
+            color: black;
         }
 
         .section-3 {
@@ -146,26 +152,26 @@
     </nav>
 
     <section id="hero" class="section section-1">
-        <div class="section-container section-1-container" style="background-color: black;"></div>
+        <div class="section-container section-1-container" style="background-color: black;">Section  1</div>
     </section>
     <section id="about" class="section section-2">
-        <div class="section-container section-2-container" style="background-color: yellow;"></div>
+        <div class="section-container section-2-container" style="background-color: yellow;">Section  2</div>
     </section>
     <section id="service" class="section section-3">
-        <div class="section-container section-3-container" style="background-color: orange;"></div>
+        <div class="section-container section-3-container" style="background-color: orange;">Section  3</div>
     </section>
     <section id="team" class="section section-4">
-        <div class="section-container section-4-container" style="background-color: orangered;"></div>
+        <div class="section-container section-4-container" style="background-color: orangered;">Section  4</div>
     </section>
     <section id="contact" class="section section-5">
-        <div class="section-container section-5-container" style="background-color: red;"></div>
+        <div class="section-container section-5-container" style="background-color: red;">Section  5</div>
     </section>
 
-    <div class="cookies-consent">
+    <!-- <div class="cookies-consent">
         <h3>We love cookies <span class="cookie-icon">🍪</span></h3>
         <p>Our site stores cookies on your computer for better experience. Do you consent to that?</p>
         <button>Accept Cookies</button>
-    </div>
+    </div> -->
 
 </body>
 

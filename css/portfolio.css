@@ -75,6 +75,10 @@ nav ul li a {
         background: var(--primary-black);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
+
+    &:active{
+        /* border: 1px solid #fff; */
+    }
 }
 
 nav ul li a:hover > span {
@@ -473,9 +477,9 @@ div.contact-wrapper {
                         height: 70px;
                     }
 
-                    &:hover {
-                        transform: scale(1.05);
-                    }
+                }
+                a:hover > span {
+                    transform: scale(1.05);
                 }
             }
 
