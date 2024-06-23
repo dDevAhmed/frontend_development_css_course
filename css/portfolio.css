@@ -94,11 +94,11 @@ div.hero-wrapper,
 div.about-wrapper,
 div.skills-wrapper,
 div.contact-wrapper {
+    min-height: 100vh;
+    width: 100vw;
     position: sticky;
     top: 0px;
     padding: 100px 200px;
-    min-height: 100vh;
-    width: 100vw;
 }
 
 div.hero-wrapper {
