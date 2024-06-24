@@ -4,175 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="shortcut icon" href="img/css_favicon/favicon-32x32.png" type="image/x-icon" />
+    <title>Sticky Sections</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
-        :root {
-            scroll-behavior: smooth;
+        /* styles.css */
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
         }
 
         .section {
+            position: relative;
+            width: 100%;
             height: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-size: 24px;
-            padding: 20px;
-            /* fixme - this disables the section link in reverse  */
+            align-items: center;
+
             position: sticky;
-            top: 0px;
-        }
-
-        div.section-container {
-            /* background: red; */
-            height: 500px;
-            width: 50%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-        }
-
-        .section-1 {
-            background-color: yellow;
-            color: white;
-        }
-
-        .section-2 {
-            background-color: orange;
-            color: black;
-        }
-
-        .section-3 {
-            background-color: orangered;
-            color: white;
-        }
-
-        .section-4 {
-            background-color: red;
-            color: white;
-        }
-
-        .section-5 {
-            background-color: black;
-            color: white;
-        }
-
-        .cookies-consent {
-            background: rgb(255, 255, 255);
-            width: 20%;
-            border-radius: 15px;
-            padding: 30px;
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-            /* transform: translateY(-50%), translateX(-50%); */
-
-            h3 {
-                font-size: 24px;
-            }
-
-            .cookie-icon {
-                font-size: 76px;
-                position: absolute;
-                top: -50px;
-                left: -30px;
-                /* animation: spin 10s linear infinite; */
-            }
-
-            button {
-                padding: 10px 20px;
-                border: none;
-                background: #404040;
-                color: #f4f4f4;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-        }
-
-        nav {
-            width: 100%;
-            position: fixed;
             top: 0;
-            background: #f4f4f4;
-            z-index: 2;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-            ul {
-                display: flex;
-                justify-content: center;
-                gap: 10px;
-
-                li {
-                    list-style-type: none;
-
-                    a {
-                        text-decoration: none;
-                        color: #404040;
-
-                        &:hover {
-                            border-bottom: 2px solid #404040;
-                        }
-                    }
-                }
-            }
+            /* width: 100%; */
+            /* height: 100vh; */
         }
 
-        @keyframes spin {
-            0% {
-                transform: rotateZ(0);
-            }
+        .content {
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-            100% {
-                transform: rotateZ(360deg);
-            }
+        #section1 {
+            background: #f8b400;
+        }
+
+        #section2 {
+            background: #e94e77;
+        }
+
+        #section3 {
+            background: #3b5998;
+        }
+
+        .sticky-wrapper {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#hero">Section 1</a></li>
-            <li><a href="#about">Section 2</a></li>
-            <li><a href="#service">Section 3</a></li>
-            <li><a href="#team">Section 4</a></li>
-            <li><a href="#contact">Section 5</a></li>
-        </ul>
-    </nav>
-
-    <section id="hero" class="section section-1">
-        <div class="section-container section-1-container" style="background-color: black;">Section  1</div>
+    <section class="section" id="section1">
+        <div class="content">
+            <h1>Section 1</h1>
+            <p>Content of section 1...</p>
+        </div>
     </section>
-    <section id="about" class="section section-2">
-        <div class="section-container section-2-container" style="background-color: yellow;">Section  2</div>
+    <section class="section" id="section2">
+        <div class="content">
+            <h1>Section 2</h1>
+            <p>Content of section 2...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>Last content...</p>
+        </div>
     </section>
-    <section id="service" class="section section-3">
-        <div class="section-container section-3-container" style="background-color: orange;">Section  3</div>
+    <section class="section" id="section3">
+        <div class="content">
+            <h1>Section 3</h1>
+            <p>Content of section 3...</p>
+        </div>
     </section>
-    <section id="team" class="section section-4">
-        <div class="section-container section-4-container" style="background-color: orangered;">Section  4</div>
-    </section>
-    <section id="contact" class="section section-5">
-        <div class="section-container section-5-container" style="background-color: red;">Section  5</div>
-    </section>
-
-    <!-- <div class="cookies-consent">
-        <h3>We love cookies <span class="cookie-icon">🍪</span></h3>
-        <p>Our site stores cookies on your computer for better experience. Do you consent to that?</p>
-        <button>Accept Cookies</button>
-    </div> -->
-
+    <script src="scripts.js"></script>
 </body>
+
+<script>
+    // scripts.js
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('.section');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: Array.from({ length: 101 }, (_, i) => i * 0.01) // Create an array [0, 0.01, ..., 1]
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const currentSection = entry.target;
+                    const contentHeight = currentSection.querySelector('.content').offsetHeight;
+                    const viewportHeight = window.innerHeight;
+
+                    if (contentHeight > viewportHeight) {
+                        currentSection.style.height = `${contentHeight}px`;
+                    } else {
+                        currentSection.style.height = '100vh';
+                    }
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+
+</script>
 
 </html>

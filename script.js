@@ -17,19 +17,34 @@
 // });
 
 
-let navbarlinks = select('#navbar .scrollto', true)
-const navbarlinksActive = () => {
-  let position = window.scrollY + 200
-  navbarlinks.forEach(navbarlink => {
-    if (!navbarlink.hash) return
-    let section = select(navbarlink.hash)
-    if (!section) return
-    if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-      navbarlink.classList.add('active')
-    } else {
-      navbarlink.classList.remove('active')
-    }
-  })
+// let navbarlinks = select('#navbar .scrollto', true)
+// const navbarlinksActive = () => {
+//   let position = window.scrollY + 200
+//   navbarlinks.forEach(navbarlink => {
+//     if (!navbarlink.hash) return
+//     let section = select(navbarlink.hash)
+//     if (!section) return
+//     if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+//       navbarlink.classList.add('active')
+//     } else {
+//       navbarlink.classList.remove('active')
+//     }
+//   })
+// }
+// window.addEventListener('load', navbarlinksActive)
+// onscroll(document, navbarlinksActive)
+
+// Function to check scroll position and toggle 'active' class
+function checkScroll() {
+  const backToTop = document.querySelector('.back-to-top');
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollPosition > 500) {
+    backToTop.style.display = 'block';
+  } else {
+    backToTop.style.display = 'none';
+  }
 }
-window.addEventListener('load', navbarlinksActive)
-onscroll(document, navbarlinksActive)
+
+// Attach the function to the window's scroll event
+window.addEventListener('scroll', checkScroll);

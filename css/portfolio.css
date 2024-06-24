@@ -76,7 +76,7 @@ nav ul li a {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    &:active{
+    &:active {
         /* border: 1px solid #fff; */
     }
 }
@@ -476,7 +476,6 @@ div.contact-wrapper {
                     img {
                         height: 70px;
                     }
-
                 }
                 a:hover > span {
                     transform: scale(1.05);
@@ -546,14 +545,18 @@ section:hover .section-title::after {
     bottom: 30px;
     background: var(--primary-white);
     color: var(--primary-black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 15px;
     border-radius: 50%;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 1;
+    display: none;
+
+    i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -561,6 +564,30 @@ section:hover .section-title::after {
         padding: 30px 30px;
         min-height: 100vh;
     } */
+
+    div.about-container,
+    div.skills-container,
+    div.contact-container {
+        flex-direction: column;
+    }
+
+    div.skills-wrapper {
+        div.skills-container {
+            span.tools {
+                span.animation-wheel {
+                    height: 250px;
+                    width: 250px;
+
+                    margin-top: 30px;
+
+                    img {
+                        width: 70px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* fixme - tablet view */
@@ -634,11 +661,11 @@ section:hover .section-title::after {
         top: 0;
     }
 
-    div.about-container,
+    /* div.about-container,
     div.skills-container,
     div.contact-container {
         flex-direction: column;
-    }
+    } */
 
     div.hero-wrapper {
         display: flex;
