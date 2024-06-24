@@ -630,7 +630,7 @@ section:hover .section-title::after {
         align-items: center;
         font-size: 18px;
         border-radius: 5px;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.1s ease-in-out;
         border: 1px solid var(--primary-white);
 
         &:hover,
@@ -639,7 +639,6 @@ section:hover .section-title::after {
             color: var(--primary-white);
             font-weight: 700;
             background: var(--primary-black);
-            /* transform: translateY(-40%) scale(1.1); */
         }
     }
 
