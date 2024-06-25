@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="shortcut icon" href="img/css_favicon/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <img src="img/css-logo.png" alt="CSS Logo">
+                <h3>Intro to CSS</h3>
+            </span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://ahmedmahmud.vercel.app/" target="_blank">HTML Classes</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Class Activities</a>
+                    <div class="dropdown-content">
+                        <a href="class_activity_1.html">Class Activity 1</a>
+                        <a href="class_activity_2.html">Class Activity 2</a>
+                        <a href="class_activity_3.html">Class Activity 3</a>
+                        <a href="class_activity_4.html">Class Activity 4</a>
+                        <a href="class_activity_5.html">Class Activity 5</a>
+                        <a href="class_activity_6.html">Class Activity 6</a>
+                        <a href="class_activity_7.html">Class Activity 7</a>
+                        <a href="class_activity_8.html">Class Activity 8</a>
+                        <a href="class_activity_9.html">Class Activity 9</a>
+                        <a href="class_activity_10.html">Class Activity 10</a>
+                        <a href="class_activity_11.html">Class Activity 11</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Assignments</a>
+                    <div class="dropdown-content">
+                        <a href="assignment_1.html">Assignment 1</a>
+                        <a href="assignment_2.html">Assignment 2</a>
+                        <a href="assignment_3.html">Assignment 3</a>
+                        <a href="assignment_4.html">Assignment 4</a>
+                        <a href="assignment_5.html">Assignment 5</a>
+                        <a href="assignment_6.html">Assignment 6</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Projects</a>
+                    <!-- <div class="dropdown-content">
+                        <a href="project_1.html">Project 1</a>
+                        <a href="project_2.html">Project 2</a>
+                        <a href="project_3.html">Project 3</a>
+                    </div> -->
+                </li>
+                <li><a href="https://github.com/dDevAhmed/" target="_blank">Author</a></li>
+                <li>
+                    <a href="https://github.com/dDevAhmed/frontend_development_css_course" target="_blank"
+                        title="Course Repo">
+                        <img src="img/icons8-github-100.png" alt="Course Github Repo" class="nav-course-repo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="https://github.com/dDevAhmed/frontend_development_css_course/blob/master/class_activity_13.html"
+        target="_blank"><img src="img/icons8-github-100.png" alt="Github Image" class="github-repo-icon"></a>
+
+    <main class="class-activity-14" id="main-content">
+
+        <div class="screen-container">
+            <nav>
+                <span class="nav-link"></span>
+                <span class="nav-link"></span>
+                <span class="nav-link"></span>
+            </nav>
+            <div class="main-container">
+                <section class="hero"></section>
+                <section class="about">
+                    <div class="image"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloribus eum nesciunt ipsa itaque
+                        nisi velit est quod consequuntur quisquam! Blanditiis vitae qui vero aspernatur accusamus
+                        repellendus, veniam voluptates temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Rem doloribus eum nesciunt ipsa itaque nisi velit est quod consequuntur quisquam!
+                        Blanditiis vitae qui vero aspernatur accusamus repellendus, veniam voluptates temporibus. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Rem doloribus eum nesciunt ipsa itaque nisi
+                        velit est quod consequuntur quisquam! Blanditiis vitae qui vero aspernatur accusamus
+                        repellendus, veniam voluptates temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Rem doloribus eum nesciunt ipsa itaque nisi velit est quod consequuntur quisquam!
+                        Blanditiis vitae qui vero aspernatur accusamus repellendus, veniam voluptates temporibus. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Rem doloribus eum nesciunt ipsa itaque nisi
+                        velit est quod consequuntur quisquam! Blanditiis vitae qui vero aspernatur accusamus
+                        repellendus, veniam voluptates temporibus. </p>
+                </section>
+
+            </div>
+        </div>
+
+        <span class="screen-buttons">
+            <button type="button" onclick="changeScreenSize('desktop')"><i class="fa fa-desktop"></i> Desktop</button>
+            <button type="button" onclick="changeScreenSize('tablet')"><i class="fa fa-tablet"></i> Tablet</button>
+            <button type="button" onclick="changeScreenSize('smartphone')"><i class='bx bx-mobile-alt'></i>
+                Smartphone</button>
+        </span>
+    </main>
+
+    <script>
+        // function changeScreenSize(deviceType) {
+        //     alert(deviceType);
+        //     // var device = deviceType;
+        //     // switch (device) {
+        //     //     case 'phone':
+        //     //         document.getQuerySelector('.class-activity-14').style.width = 767;                    
+        //     //         break;
+        //     //     case 'tablet':
+        //     //         document.getQuerySelector('.class-activity-14').style.width = 1023;                    
+        //     //         break;
+        //     //     case 'desktop':
+        //     //         document.getQuerySelector('.class-activity-14').style.width = 767;                    
+        //     //         break;
+
+        //     //     default:
+        //     //         break;
+        //     // }
+        // }
+        function changeScreenSize(deviceType) {
+            var mainElement = document.getElementById('main-content');
+            switch (deviceType) {
+                case 'smartphone':
+                    mainElement.style.width = '375px'; // Width for smartphone
+                    break;
+                case 'tablet':
+                    mainElement.style.width = '768px'; // Width for tablet
+                    break;
+                case 'desktop':
+                    mainElement.style.width = '1044px'; // Width for desktop
+                    break;
+                default:
+                    mainElement.style.width = '1044px'; // Default width
+                    break;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to CSS</title>
+    <link rel="shortcut icon" href="img/css_favicon/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            /* color: #333; */
+        }
+
+        .navbar {
+            overflow: hidden;
+            background: linear-gradient(-90deg, #158fe6, #35c1f1);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            padding: 22px 16px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: #333;
+            padding: 22px 16px;
+            background-color: inherit;
+            font: inherit;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            left: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            padding: 30px;
+        }
+
+        .dropdown-content .header {
+            background: #333;
+            padding: 16px;
+            color: white;
+        }
+
+        .dropdown-content .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            a {
+                /* color: #333; */
+            }
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            background-color: #ccc;
+            height: 250px;
+        }
+
+        .column a {
+            float: none;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .column a:hover {
+            background-color: #ddd;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="nav-logo">
+                <!-- <img src="img/css-logo.png" alt="CSS Logo"> -->
+                <h3>Intro to CSS</h3>
+            </span>
+            <span class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="https://ahmedmahmud.vercel.app/"">Html Classes</a>
+                <div class=" dropdown">
+                    <button class="dropbtn">Class Activities
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <a href="class_activity_1.html">Class Activity 1</a>
+                            <a href="class_activity_2.html">Class Activity 2</a>
+                            <a href="class_activity_3.html">Class Activity 3</a>
+                            <a href="class_activity_4.html">Class Activity 4</a>
+                            <a href="class_activity_5.html">Class Activity 5</a>
+                            <a href="class_activity_6.html">Class Activity 6</a>
+                            <a href="class_activity_7.html">Class Activity 7</a>
+                            <a href="class_activity_8.html">Class Activity 8</a>
+                            <a href="class_activity_9.html">Class Activity 9</a>
+                            <a href="class_activity_10.html">Class Activity 10</a>
+                            <a href="class_activity_11.html">Class Activity 11</a>
+                            <a href="class_activity_12.html">Class Activity 12</a>
+                            <a href="class_activity_13.html">Class Activity 13</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Assignment
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <a href="assignment_1.html">Assignment 1</a>
+                                <a href="assignment_2.html">Assignment 2</a>
+                                <a href="assignment_3.html">Assignment 3</a>
+                                <a href="assignment_4.html">Assignment 4</a>
+                                <a href="assignment_5.html">Assignment 5</a>
+                                <a href="assignment_6.html">Assignment 6</a>
+                                <a href="assignment_7.html">Assignment 7</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Projects
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <a href="https://ahmedfrontend.w3spaces.com/" target="_blank">Artisan's Oven</a>
+                                <a href="https://deliciousbytes.vercel.app/" target="_blank">Delicious Bytes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/dDevAhmed/" target="_blank">Author</a>
+                    <a href="https://github.com/dDevAhmed/frontend_development_css_course">Site Repo <i
+                            class="fa fa-github"></i></a>
+                    <!-- <a href="https://github.com/dDevAhmed/frontend_development_css_course" target="_blank" title="Course Repo">
+                    <img src="img/icons8-github-100.png" alt="Course Github Repo" class="nav-course-repo">
+                </a> -->
+            </span>
+        </nav>
+    </header>
+    <aside>
+        <!-- <h3>CSS Class</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="class_activity_1.html">Class Activity 1</a></li>
+            <li><a href="assignment_1.html">Assignment 1</a></li>
+        </ul> -->
+    </aside>
+    <main class="index">
+        <section>
+            <h3>Welcome to CSS</h3>
+            <p>The purpose of this class is to learn how to use CSS to style HTML documents, enhancing the visual appeal
+                and
+                usability of websites.</p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+
+        </section>
+    </main>
+</body>
+
+</html>
