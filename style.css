@@ -24,6 +24,10 @@ body {
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    /* fixme - fix the navbar */
+    /* position: fixed; */
+    /* top: 0; */
 }
 
 .navbar span.nav-logo {
@@ -55,7 +59,7 @@ body {
     align-items: center;
 }
 
-.navbar .nav-links a.course-repo{
+.navbar .nav-links a.course-repo {
     margin: -10px;
 }
 
@@ -109,7 +113,7 @@ body {
 
 .dropdown-content .row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
 
     a {
         /* color: #333; */
@@ -157,19 +161,19 @@ body {
     }
 } */
 
-div.page-container {
+/* div.page-container {
     display: flex;
     gap: 10px;
-}
+} */
 
-aside {
+/* aside {
     height: 100%;
     position: fixed;
     top: 0;
     background: var(--primary-black);
     min-width: 200px;
     z-index: -1;
-}
+} */
 
 main.index {
     padding: 100px 40px 20px 40px;
@@ -183,7 +187,7 @@ main.index {
     left: 50px;
     height: 50px;
     width: auto;
-    z-index: 10;
+    z-index: 9;
     border-radius: 50%;
 
     &:hover {

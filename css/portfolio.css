@@ -707,11 +707,14 @@ section:hover .section-title::after {
                 border: none;
 
                 img {
-                    width: 100%;
+                    width: 50%;
+                    margin: 0 auto !important;
                     position: relative;
                     bottom: 0px;
                     right: 0px;
                     left: 0;
+                    display: flex;
+                    justify-content: center;
                 }
             }
 

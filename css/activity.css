@@ -475,7 +475,7 @@ main.class-activity-6 {
 
 .class-activity-6 .login-form .social-icons {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     /* margin-bottom: 20px  ; */
 }
@@ -669,7 +669,7 @@ main.class-activity-8 {
     background: #808080;
     padding: 150px 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -1087,9 +1087,75 @@ main.class-activity-14 {
         }
     }
 }
+/* class activity 14 */
+
+/* class activity 15 */
+main.class-activity-15 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: serif;
+    padding: 10px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+
+    .header,
+    .sidebar,
+    .content,
+    .footer {
+        display: grid;
+        place-content: center;
+        color: white;
+        border: 5px solid #171425;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .header {
+        background: linear-gradient(90deg, #7259db, #8b75e1);
+        grid-column: 3 span;
+        grid-row: 1 span;
+    }
+
+    .sidebar {
+        background: linear-gradient(#5dd6cd, #49aaa3);
+        grid-column: 1 span;
+        grid-row: 2 span;
+        height: 200px;
+    }
+
+    .content {
+        background: linear-gradient(90deg, #535ede, #3ba9f8);
+    }
+    
+    .content-1 {
+        grid-column: 2 span;
+        grid-row: 1 span;
+    }
+    
+    .content-2 {
+        grid-column: 1 span;
+        grid-row: 1 span;
+    }
+    
+    .content-3 {
+        grid-column: 1 span;
+        grid-row: 1 span;
+    }
+    
+    .footer{
+        background: linear-gradient(90deg, #735ADC, #8B75E1);
+        grid-column: 3 span;
+        grid-row: 1 span;
+    }
+}
+/* class activity 15 */
 
 @media only screen and (max-width: 767px) {
-    main.class-activity-14{
+    main.class-activity-14 {
         width: 767px;
     }
 }
@@ -1099,12 +1165,12 @@ main.class-activity-14 {
         width: 100%; /* Adjust to full width of the parent container */
         padding: 100px;
     }
-    
+
     section.about {
         height: auto; /* Ensure it can grow to accommodate content */
         overflow: auto; /* Enable scrolling for the content */
     }
-    
+
     section.about p {
         max-height: 200px; /* Constrain height for scrolling */
         overflow-y: auto; /* Enable vertical scrolling */
@@ -1116,7 +1182,7 @@ main.class-activity-14 {
     main.class-activity-14 {
         padding: 5px;
     }
-    
+
     section.about p {
         max-height: 150px; /* Adjust height for smaller screens */
     }

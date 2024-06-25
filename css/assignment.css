@@ -260,7 +260,7 @@ main.assignment-4 {
 .assignment-4 .sign-up-card {
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin: auto;
 }
 
@@ -379,7 +379,7 @@ main.assignment-5 {
     color: black;
     padding: 50px 150px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
 
@@ -539,10 +539,37 @@ nav.assignment-6 .nav-logo {
 .assignment-6 nav.assignment-6 .nav-center-links {
     text-transform: uppercase;
     font-size: 14px;
-    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
 
-    li:hover {
-        border-bottom: 2px solid #020202;
+    li {
+        list-style-type: none;
+
+        a{
+            text-decoration: none;
+            color: #020202;
+            font-weight: 700;
+
+            &:hover{
+                border-bottom: 2px solid #020202;
+            }
+        }
+
+    }
+}
+
+.assignment-6 nav.assignment-6 .nav-right-links{
+    display: flex;
+    gap: 10px;
+
+    li{
+        list-style-type: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: #020202;
     }
 }
 
@@ -701,7 +728,7 @@ main.assignment-7 {
     height: 90%;
 }
 
-.assignment-7 div.expand-fullscreen a{
+.assignment-7 div.expand-fullscreen a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -710,7 +737,7 @@ main.assignment-7 {
     text-decoration: none;
     padding: 10px;
 
-    img{
+    img {
         height: 25px;
         width: auto;
     }
