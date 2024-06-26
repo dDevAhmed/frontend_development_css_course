@@ -1130,29 +1130,69 @@ main.class-activity-15 {
     .content {
         background: linear-gradient(90deg, #535ede, #3ba9f8);
     }
-    
+
     .content-1 {
         grid-column: 2 span;
         grid-row: 1 span;
     }
-    
+
     .content-2 {
         grid-column: 1 span;
         grid-row: 1 span;
     }
-    
+
     .content-3 {
         grid-column: 1 span;
         grid-row: 1 span;
     }
-    
-    .footer{
-        background: linear-gradient(90deg, #735ADC, #8B75E1);
+
+    .footer {
+        background: linear-gradient(90deg, #735adc, #8b75e1);
         grid-column: 3 span;
         grid-row: 1 span;
     }
 }
 /* class activity 15 */
+
+/* class activity 16 */
+main.class-activity-16 {
+    margin: 100px auto 30px;
+    position: relative;
+    width: 50%;
+    /* height: 300px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: serif;
+    border-radius: 10px;
+    border: 10px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .content {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        height: 50vh;
+        font-weight: 600;
+    }
+
+    .content-1 {
+        background: #f97171;
+    }
+
+    .content-2 {
+        background: #F99D50;
+    }
+
+    .content-3 {
+        background: #F5D460;
+    }
+
+    .content-4 {
+        background: #C6ED78;
+    }
+}
+/* class activity 16 */
 
 @media only screen and (max-width: 767px) {
     main.class-activity-14 {
@@ -1187,4 +1227,29 @@ main.class-activity-15 {
         max-height: 150px; /* Adjust height for smaller screens */
     }
 }
-/* class activity 14 */
+
+/* note - Tablet Mode */
+@media only screen and (max-width: 992px){
+
+    
+    main.class-activity-16{
+        grid-template-columns: repeat(2, 1fr);
+
+        .content {
+            height: 25vh;
+            padding: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    main.class-activity-16{
+        grid-template-columns: auto;
+
+        .content {
+            height: 10vh;
+            padding: 20px;
+        }
+    }
+}
+

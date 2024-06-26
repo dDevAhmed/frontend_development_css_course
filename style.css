@@ -166,14 +166,14 @@ body {
     gap: 10px;
 } */
 
-/* aside {
+aside.index-aside {
     height: 100%;
     position: fixed;
     top: 0;
     background: var(--primary-black);
     min-width: 200px;
     z-index: -1;
-} */
+}
 
 main.index {
     padding: 100px 40px 20px 40px;
