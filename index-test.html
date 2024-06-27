@@ -6,32 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduction to CSS</title>
     <link rel="shortcut icon" href="img/css_favicon/favicon-32x32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <style>
-        #first-para {
-            color: blue;
+        * {
+            /* border: 1px dashed darksalmon;
+   margin: 10px; */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* background-color: #f4f4f4;
+border-right: 1px solid #ccc;
+border-right: 1px solid #333; */
+
+        header nav {
+            background: orange;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            color: #333;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 11;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+            /* position: relative; */
+        }
+
+        nav span {
+            display: flex;
+            align-items: center;
+        }
+
+        nav span img {
+            height: 50px;
+            width: auto;
+        }
+
+        nav span h3 {
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            /* margin-left: 30px; */
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+        }
+
+        nav ul li a:hover {
+            /* color: #fff; */
+        }
+
+        nav ul li a img.nav-course-repo {
+            height: 40px;
+            width: auto;
+        }
+
+        /* Dropdown container */
+        nav .dropdown {
+            position: relative;
+            display: inline-block;
+            background: green;
+        }
+
+        /* Dropdown content (hidden by default) */
+        nav .dropdown-content {
+            display: none;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            padding: 30px;
+
+            div.row{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        /* Links inside the dropdown */
+        nav .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        nav .dropdown-content a:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        /* Show the dropdown menu on hover */
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        div.page-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        aside {
+            height: 100%;
+            position: fixed;
+            top: 0;
+            background: #333;
+            min-width: 200px;
+            z-index: -1;
+        }
+
+        main.index {
+            padding: 100px 40px 20px 40px;
+            margin-left: 200px;
+        }
+
+        /* activities/assignments github repo icon */
+        .github-repo-icon {
+            position: fixed;
+            top: 100px;
+            left: 50px;
+            height: 50px;
+            width: auto;
+            z-index: 10;
         }
     </style>
 </head>
 
 <body>
-    <header class="nav-header">
-        <nav class="navbar">
-            <span class="nav-logo">
+    <header>
+        <nav>
+            <span>
                 <img src="img/css-logo.png" alt="CSS Logo">
                 <h3>Intro to CSS</h3>
             </span>
-            <span class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="https://ahmedmahmud.vercel.app/">Html Classes</a>
-                <div class=" dropdown">
-                    <button class="dropbtn">Class Activities
-                        <i class="fa fa-caret-down"></i>
-                    </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://ahmedmahmud.vercel.app/" target="_blank">HTML Classes</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Class Activities</a>
                     <div class="dropdown-content">
-                        <div class="row">
+                        <span class="row">
                             <a href="class_activity_1.html">Class Activity 1</a>
                             <a href="class_activity_2.html">Class Activity 2</a>
                             <a href="class_activity_3.html">Class Activity 3</a>
@@ -43,16 +177,11 @@
                             <a href="class_activity_9.html">Class Activity 9</a>
                             <a href="class_activity_10.html">Class Activity 10</a>
                             <a href="class_activity_11.html">Class Activity 11</a>
-                            <a href="class_activity_12.html">Class Activity 12</a>
-                            <a href="class_activity_13.html">Class Activity 13</a>
-                            <a href="class_activity_14.html">Class Activity 14</a>
-                        </div>
+                        </span>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Assignment
-                        <i class="fa fa-caret-down"></i>
-                    </button>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Assignments</a>
                     <div class="dropdown-content">
                         <div class="row">
                             <a href="assignment_1.html">Assignment 1</a>
@@ -64,24 +193,23 @@
                             <a href="assignment_7.html">Assignment 7</a>
                         </div>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <div class="row">
-                            <a href="https://ahmedfrontend.w3spaces.com/" target="_blank">Artisan's Oven</a>
-                            <a href="https://deliciousbytes.vercel.app/" target="_blank">Delicious Bytes</a>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://github.com/dDevAhmed/" target="_blank">Author</a>
-                <a href="https://github.com/dDevAhmed/frontend_development_css_course" target="_blank"
-                    title="Course Repo" class="course-repo">
-                    <img src="img/icons8-github-100.png" alt="Course Github Repo" class="nav-course-repo">
-                </a>
-            </span>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Projects</a>
+                    <!-- <div class="dropdown-content">
+                        <a href="project_1.html">Project 1</a>
+                        <a href="project_2.html">Project 2</a>
+                        <a href="project_3.html">Project 3</a>
+                    </div> -->
+                </li>
+                <li><a href="https://github.com/dDevAhmed/" target="_blank">Author</a></li>
+                <!-- <li>
+                    <a href="https://github.com/dDevAhmed/frontend_development_css_course" target="_blank"
+                        title="Course Repo">
+                        <img src="img/icons8-github-100.png" alt="Course Github Repo" class="nav-course-repo">
+                    </a>
+                </li> -->
+            </ul>
         </nav>
     </header>
     <aside>
@@ -98,6 +226,177 @@
             <p>The purpose of this class is to learn how to use CSS to style HTML documents, enhancing the visual appeal
                 and
                 usability of websites.</p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
+            <p id="first-para" style="column-count: 5; color: red">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
+                nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur
+                quasi ipsa aliquid animi eveniet provident dolorem nihil id,
+                accusantium quibusdam! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia magnam voluptatum, laborum cum dolorem iste,
+                id ducimus ut facilis assumenda corrupti sit necessitatibus
+                explicabo similique dolorum earum, at inventore neque.
+            </p>
             <p id="first-para" style="column-count: 5; color: red">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint
                 nemo incidunt quis placeat molestias modi! Quas, saepe, consequuntur

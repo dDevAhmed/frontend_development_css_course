@@ -16,35 +16,36 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    overflow: hidden;
+.main-navbar {
+    /* overflow: hidden; */
     background: linear-gradient(-90deg, #158fe6, #35c1f1);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    /* fixme - fix the navbar */
-    /* position: fixed; */
-    /* top: 0; */
 }
 
-.navbar span.nav-logo {
+.main-navbar span.nav-logo {
     display: flex;
     align-items: center;
 }
 
-.navbar span.nav-logo img {
+.main-navbar span.nav-logo img {
     height: 50px;
     width: auto;
 }
 
-.navbar span.nav-logo h3 {
+.main-navbar span.nav-logo h3 {
     color: var(--primary-black);
 }
 
-.navbar a {
+.main-navbar a {
     float: left;
     font-size: 16px;
     color: #333;
@@ -54,16 +55,16 @@ body {
     font-weight: 600;
 }
 
-.navbar .nav-links {
+.main-navbar .nav-links {
     display: flex;
     align-items: center;
 }
 
-.navbar .nav-links a.course-repo {
+.main-navbar .nav-links a.course-repo {
     margin: -10px;
 }
 
-.navbar .nav-links a img.nav-course-repo {
+.main-navbar .nav-links a img.nav-course-repo {
     height: 30px;
 
     &:hover {
@@ -71,12 +72,12 @@ body {
     }
 }
 
-.dropdown {
+.main-navbar .dropdown {
     float: left;
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.main-navbar .dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
@@ -88,13 +89,13 @@ body {
     font-weight: 600;
 }
 
-.navbar a:hover:not(a.course-repo),
-.dropdown:hover .dropbtn {
+.main-navbar a:hover:not(a.course-repo),
+.main-navbar .dropdown:hover .dropbtn {
     background-color: #333;
     color: #fff;
 }
 
-.dropdown-content {
+.main-navbar .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -105,13 +106,13 @@ body {
     padding: 30px;
 }
 
-.dropdown-content .header {
+.main-navbar .dropdown-content .header {
     background: #333;
     padding: 16px;
     color: white;
 }
 
-.dropdown-content .row {
+.main-navbar .dropdown-content .row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
@@ -120,7 +121,7 @@ body {
     }
 }
 
-.dropdown:hover .dropdown-content {
+.main-navbar .dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -195,3 +196,9 @@ main.index {
     }
 }
 /* activities/assignments github repo icon */
+
+@media only screen and (max-width: 992px) {
+    navbar .nav-links {
+        display: none;
+    }
+}
